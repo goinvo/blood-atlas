@@ -111,14 +111,46 @@ including ignoring the step they are on.
 
 ## 3. No ambient motion
 
-Nothing drifts, floats, breathes or animates on its own. Transitions are for
-colour and opacity on direct interaction, and are short. A diagram that moves is
-harder to read than one that does not.
+Nothing drifts, floats, breathes or animates on its own. A diagram that moves is
+harder to read than one that does not. Motion is allowed only under §3b.
+
+## 3b. Motion explains a change you caused
+
+*Proposed in the motion-guidance PR; replaces "transitions are for colour and
+opacity on direct interaction".*
+
+Motion may show **how the page got from what it was to what it is now**, right
+after the reader did something. It never decorates, never loops, and never
+carries information the still page does not.
+
+- **The end state is drawn first.** `render()` draws the result; motion only
+  animates the way in. With motion off the page is identical, arrived at
+  instantly. `pipeline/tests/motion.js` compares the two.
+- **Cause, then effect.** Marking a result draws its lines from the marker,
+  lights each concern as its line arrives, then the follow-ups. The order is
+  the explanation: it is how the map is read.
+- **Things that move to a new place travel there.** A concern you pick carries
+  its name into the panel header, so the eye follows it instead of hunting.
+  The travelling copy is a decoration: `aria-hidden`, no pointer events, gone
+  when it lands.
+- **Short.** Under half a second for any one change. A whole upload or a clear
+  is too much to stage: it gets one fade.
+- **The reader decides.** The header's Motion control: *auto* follows the
+  system's reduce-motion setting; *full*; *reduced* keeps fades and drops
+  anything that travels or draws; *off* is instant, colour transitions included.
+  The intro follows the same setting.
+
+The first frame (§5b2) uses the same idea without motion: with nothing marked,
+added or picked, the concern column steps back to 40% so your own markers are
+read first. Every concern is still drawn and readable, and the frame ends the
+moment you mark or pick anything.
 
 ## 4. State is colour, not geometry
 
 Selection, hover and focus change **colour and opacity only**. They never change
-a line's weight, a dot's radius, a row's height or a label's size.
+a line's weight, a dot's radius, a row's height or a label's size. (A transition
+under §3b can travel on the way to a state; the state it lands in is still
+colour, not geometry.)
 
 Two reasons. A drawing whose geometry moves with state is a different drawing
 each time you look at it, which is rule 2 in another guise. And weight is a

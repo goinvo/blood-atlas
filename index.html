@@ -196,6 +196,14 @@ button{font-family:inherit;cursor:pointer}
 .map .edge.hi{stroke:var(--high)}
 .map .edge.hot{stroke-width:1.6;opacity:1}
 .map .e3{fill:none;stroke:var(--teal);stroke-width:1.4}
+/* first frame: the concerns step back until you mark or pick something */
+.map.calm .row.cnc .lb,.map.calm .row.cnc .dot{opacity:.4}
+.map.calm .row.cnc:hover .lb,.map.calm .row.cnc:hover .dot{opacity:1}
+/* the label that travels into the panel header when a concern is picked */
+.ghostlab{position:fixed;z-index:60;pointer-events:none;margin:0;white-space:nowrap;
+ font-family:var(--font-serif);color:var(--ink);transform-origin:0 0}
+/* Motion off: nothing transitions, not even colour */
+html[data-motion="off"] *, html[data-motion="off"] *::before, html[data-motion="off"] *::after{transition:none!important;animation:none!important}
 
 .map .colhd{font-family:var(--font-mono);font-size:10px;fill:var(--dim);letter-spacing:.09em}
 /* The column titles sit above the canvas rather than inside it, so scrolling
@@ -561,7 +569,10 @@ window.initBloodCellsIntro = function(onCompleteCallback){
  }
  skipBtn.addEventListener('click', dismissIntroSimple);
 
- const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ // The in-app Motion setting wins over the system one; "auto" defers to it.
+ let pref = 'auto'; try{ pref = localStorage.getItem('atlas.motion') || 'auto'; }catch(e){}
+ const reduceMotion = pref === 'reduced' || pref === 'off'
+   || (pref !== 'full' && !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches));
  if(reduceMotion || typeof THREE === 'undefined'){
   if(!reduceMotion){ dismissIntroSimple(); return; }
   setTimeout(() => overlay.classList.add('reveal-active'), 100);
@@ -1219,6 +1230,7 @@ window.addEventListener('load', function(){
     <path d="M1.5 4l6.5 5 6.5-5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
    </svg>
   </a>
+  <button type="button" class="plainlink" id="btnMotion"></button>
   <button type="button" class="iconbtn" id="btnTheme" aria-pressed="false"></button>
  </span>
 </div>
@@ -1672,22 +1684,22 @@ function draw(){
    const y2 = L.cn[ci]; if(y2 == null) return;
    const live = v !== 0 || selC === ci || selM === sl;
    if(!live) return;
-   eds.push({ live: live, d:'M'+L.xM.toFixed(1)+' '+y1.toFixed(1)
+   eds.push({ live: live, k: sl+'|'+ci, d:'M'+L.xM.toFixed(1)+' '+y1.toFixed(1)
       +'C'+((L.xM+L.xC)/2).toFixed(1)+' '+y1.toFixed(1)+','
       +((L.xM+L.xC)/2).toFixed(1)+' '+y2.toFixed(1)+','+L.xC.toFixed(1)+' '+y2.toFixed(1),
       cls:['edge', 'on', v<0?'lo':v>0?'hi':'',
            (selC===ci||selM===sl||st.hot===sl||st.hot===('c'+ci))?'hot':''].filter(Boolean).join(' ') });
   });
  });
- eds.forEach(e => { h += '<path class="'+e.cls+'" d="'+e.d+'"/>'; });
+ eds.forEach(e => { h += '<path class="'+e.cls+'" data-e="'+e.k+'" d="'+e.d+'"/>'; });
 
  // ---- edges concern -> follow-up
  // Outgoing edges start at the concern's right-hand connector dot, so they
  // never run across the label text on their way to the follow-up column.
  if(L.open !== null){
   const y1 = L.cn[L.open], x1 = L.xCend;
-  L.ts.forEach(o => {
-   h += '<path class="e3" d="M'+x1.toFixed(1)+' '+y1.toFixed(1)
+  L.ts.forEach((o, j) => {
+   h += '<path class="e3" data-e3="'+L.open+'|'+j+'" d="M'+x1.toFixed(1)+' '+y1.toFixed(1)
      +'C'+((x1+L.xT)/2).toFixed(1)+' '+y1.toFixed(1)+','
      +((x1+L.xT)/2).toFixed(1)+' '+o.y.toFixed(1)+','+L.xT.toFixed(1)+' '+o.y.toFixed(1)+'"/>';
   });
@@ -1810,6 +1822,11 @@ function draw(){
  // fits, taller when it does not, and the 24px below the last row is the same
  // 24px the layout leaves above the first.
  const m = $('map'), mapH = Math.round(b.T + L.H + 24);
+ // The first frame: with nothing marked, added or selected, the concern
+ // column steps back so your own markers are the first thing read. It is a
+ // frame, not a mode — every concern is still drawn and readable, and it ends
+ // on its own the moment you mark or pick anything.
+ m.classList.toggle('calm', !flagged().length && !Object.keys(st.added).length && !st.sel);
  m.setAttribute('viewBox', '0 0 ' + b.W + ' ' + mapH);
  m.setAttribute('height', mapH);
  m.style.height = mapH + 'px';
@@ -2011,9 +2028,10 @@ function drawDetail(){
   $('whyH').hidden = false;
   $('whyH').textContent = 'how to read this';
   $('why').innerHTML = '<p class="lead">'+(nFlag ? nf(nFlag)+' marker'+(nFlag===1?'':'s')+' marked abnormal'
-                                : 'Nothing marked yet — mark a marker low or high')+'</p>'
+                                : st.editMode ? 'Nothing marked yet — mark a marker low or high' : 'Nothing marked yet')+'</p>'
    + '<p class="empty">Left: the '+META.base+' markers in a routine annual panel. '
-   + 'Middle: every concern they could point at. Right: what would follow one up.</p>';
+   + 'Middle: every concern they could point at. Right: what would follow one up.</p>'
+   + (nFlag || st.editMode ? '' : '<button class="more" data-edit-toggle="1">Mark a result low or high</button>');
   // Nothing follows up an empty selection, so the section is hidden rather
   // than shown empty.
   nextSlot.hidden = true;
@@ -2135,8 +2153,123 @@ function applyMobileDrawers(){
  document.body.classList.toggle('det-open', detOpen);
 }
 
-function render(){ applyMobileDrawers(); relayout(); drawColBar(); drawPicker(); drawDetail();
-                   scrollToFocus(); applySlots(); }
+/* ---------- motion ------------------------------------------------------------
+   Motion explains a change the reader just caused: a line drawn from the result
+   you marked to the concern it reaches, that concern lighting up once the line
+   arrives, the follow-ups after it, the concern you picked carried into the
+   panel header. Nothing moves on its own. render() draws the end state before
+   anything animates, so motion only changes the way in, never where anything
+   ends up: with motion off the page is the same page, arrived at instantly.
+
+   The header's Motion control: auto follows the system's reduce-motion setting;
+   full; reduced keeps fades and drops anything that travels or draws; off is
+   instant, colour transitions included. */
+const MOTION = ['auto', 'full', 'reduced', 'off'];
+let motionPref = 'auto', lastSelKey = null;
+try{ const v = localStorage.getItem('atlas.motion'); if(MOTION.indexOf(v) >= 0) motionPref = v; }catch(e){}
+function motionLevel(){
+ if(motionPref !== 'auto') return motionPref;
+ return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'reduced' : 'full';
+}
+function drawMotionButton(){
+ const lv = motionLevel(), b = $('btnMotion');
+ document.documentElement.dataset.motion = lv;
+ b.textContent = 'Motion: ' + motionPref;
+ b.title = 'Animation: ' + (motionPref === 'auto' ? 'following your system setting (' + lv + ')' : motionPref)
+         + '. Click for ' + MOTION[(MOTION.indexOf(motionPref) + 1) % MOTION.length] + '.';
+}
+$('btnMotion').addEventListener('click', function(){
+ motionPref = MOTION[(MOTION.indexOf(motionPref) + 1) % MOTION.length];
+ try{ localStorage.setItem('atlas.motion', motionPref); }catch(e){}
+ drawMotionButton();
+});
+drawMotionButton();
+
+const EASE = 'cubic-bezier(.2,.7,.2,1)';
+// fill:'backwards' holds the first frame through a delay, so a staged line is
+// not seen at full strength before its turn.
+const anim = (el, frames, o) => el.animate(frames, Object.assign({ fill:'backwards', easing:EASE }, o));
+
+function motionBefore(){
+ const m = $('map'), was = { edges:{}, e3:{}, on:{}, calm:m.classList.contains('calm'), from:null };
+ m.querySelectorAll('[data-e]').forEach(e => { was.edges[e.getAttribute('data-e')] = 1; });
+ m.querySelectorAll('[data-e3]').forEach(e => { was.e3[e.getAttribute('data-e3')] = 1; });
+ m.querySelectorAll('.row.cnc.on').forEach(e => { was.on[e.getAttribute('data-cn')] = 1; });
+ // Where the concern you just picked sits now, read before the redraw, so its
+ // name can travel from there into the panel header.
+ if(st.sel && st.sel.t === 'c'){
+  const t = m.querySelector('.row.cnc[data-cn="'+st.sel.v+'"] .lb');
+  if(t) was.from = t.getBoundingClientRect();
+ }
+ return was;
+}
+
+function motionAfter(was){
+ const selKey = st.sel ? st.sel.t + ':' + st.sel.v : null, newSel = selKey !== lastSelKey;
+ lastSelKey = selKey;
+ const lv = motionLevel();
+ if(lv === 'off' || !Element.prototype.animate) return;
+ const full = lv === 'full', T = full ? 1 : 0, m = $('map');
+ const fresh = (sel, attr, seen) => Array.prototype.filter.call(m.querySelectorAll(sel), e => !seen[e.getAttribute(attr)]);
+ const edges = fresh('[data-e]', 'data-e', was.edges), e3 = fresh('[data-e3]', 'data-e3', was.e3),
+       lit = fresh('.row.cnc.on', 'data-cn', was.on);
+ // An upload or a clear changes too much at once to stage; one fade says the
+ // map changed, without forty lines drawing over each other.
+ if(edges.length + lit.length > 40){ anim(m, [{opacity:.4}, {opacity:1}], {duration:240}); return; }
+ // Cause, then effect: the line leaves the marker, the concern lights when it
+ // arrives, then the follow-ups. Reduced runs the same fades all at once.
+ edges.forEach(e => drawIn(e, 0, full));
+ lit.forEach(e => anim(e, [{opacity:.35}, {opacity:1}], {duration:240, delay:220 * T}));
+ e3.forEach((e, i) => drawIn(e, (260 + i * 20) * T, full));
+ Array.prototype.forEach.call(m.querySelectorAll('.row.tst'), (e, i) => {
+  if(!was.e3[e.getAttribute('data-test') + '|' + e.getAttribute('data-ti')])
+   anim(e, [{opacity:0}, {opacity:1}], {duration:200, delay:(320 + i * 20) * T});
+ });
+ // The first frame ending: the concern column comes back up as one.
+ if(was.calm && !m.classList.contains('calm'))
+  Array.prototype.forEach.call(m.querySelectorAll('.row.cnc:not(.on)'), e => anim(e, [{opacity:.4}, {opacity:1}], {duration:360}));
+ if(newSel && st.sel && st.sel.t === 'c') carryToPanel(was.from, full);
+ // A system view's questions arrive in the order they are asked.
+ const sys = newSel && $('why').querySelector('.sys');
+ if(sys) Array.prototype.forEach.call(sys.children, (c, i) => anim(c,
+   full ? [{opacity:0, transform:'translateY(4px)'}, {opacity:1, transform:'none'}] : [{opacity:0}, {opacity:1}],
+   {duration:220, delay:Math.min(i, 16) * 30 * T}));
+}
+
+// A line is drawn from its start; under reduced it only fades in.
+function drawIn(path, delay, full){
+ if(!full || !path.getTotalLength) return anim(path, [{opacity:0}, {opacity:1}], {duration:200, delay:delay});
+ const n = path.getTotalLength();
+ anim(path, [{strokeDasharray:n+' '+n, strokeDashoffset:n}, {strokeDasharray:n+' '+n, strokeDashoffset:0}],
+      {duration:360, delay:delay});
+}
+
+// The name of the concern you picked travels from its row into the panel
+// header, so the eye follows it rather than hunting for where it went. The
+// copy that travels is a decoration — aria-hidden, no pointer events, removed
+// when it lands; the real header is in place throughout and fades in under it.
+function carryToPanel(from, full){
+ const h = $('dHead').querySelector('h2');
+ if(!h) return;
+ if(!full || !from){ anim(h, [{opacity:0}, {opacity:1}], {duration:200}); return; }
+ const to = h.getBoundingClientRect(), cs = getComputedStyle(h), fs = parseFloat(cs.fontSize) || 18;
+ const g = document.createElement('p');
+ g.className = 'ghostlab'; g.setAttribute('aria-hidden', 'true'); g.textContent = h.textContent;
+ g.style.left = to.left + 'px'; g.style.top = to.top + 'px';
+ g.style.fontSize = cs.fontSize; g.style.fontWeight = cs.fontWeight; g.style.lineHeight = cs.lineHeight;
+ document.body.appendChild(g);
+ const a = g.animate([
+   {transform:'translate(' + (from.left - to.left) + 'px,' + (from.top - to.top) + 'px) scale(' + (12 / fs) + ')'},
+   {transform:'none'}], {duration:420, easing:EASE});
+ // The real header waits under the travelling copy and takes over as it lands.
+ anim(h, [{opacity:0}, {opacity:0}], {duration:420, easing:'linear'});
+ const done = () => g.remove();
+ a.onfinish = done; a.oncancel = done;
+}
+
+function render(){ const was = motionBefore();
+                   applyMobileDrawers(); relayout(); drawColBar(); drawPicker(); drawDetail();
+                   scrollToFocus(); applySlots(); motionAfter(was); }
 
 /* ---------- the table view -------------------------------------------
    The catalogue is not in this page: it is fetched once, on first open, from
