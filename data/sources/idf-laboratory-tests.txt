@@ -1,0 +1,212 @@
+URL: https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests
+Fetched: 2026-11-02 (page text, tags stripped)
+
+Laboratory testing | Immune Deficiency Foundation 
+ Skip to main content
+ Understanding primary immunodeficiency (PI) 
+ What is PI? 
+ How your immune system works 
+ Genetics and PI 
+ Could it be your immune system? 
+ Types of PI 
+ Diagnosis 
+ Genetic testing 
+ Laboratory testing 
+ Newborn screening 
+ Treatment 
+ Preventative antimicrobials 
+ Immunoglobulin replacement therapy 
+ Hematopoietic stem cell transplantation 
+ Gene therapy 
+ Think Zebra 
+ Understanding PI
+ The more you understand about primary immunodeficiency (PI), the better you can manage it. Learn about PI diagnoses and treatment options.
+ Learn more about PI 
+ Living with PI 
+ Explaining your diagnosis 
+ Nurturing your health 
+ Addressing mental health 
+ Digestive and liver health 
+ Fertility and pregnancy 
+ Other body systems 
+ Respiratory health 
+ Vaccines 
+ Get support 
+ Ask IDF 
+ Get Connected Groups 
+ IDF Friends online community 
+ Peer and group support 
+ Find other support 
+ Caring for children and teens 
+ Navigating insurance 
+ Choosing a plan 
+ Appeal or file a complaint 
+ Thriving at work 
+ Traveling safely 
+ Senior adults 
+ Living with PI
+ Living with primary immunodeficiency (PI) can be challenging, but you’re not alone—many people with PI lead full and active lives. With the right support and resources, you can, too.
+ Learn more about living with PI 
+ Get involved 
+ Give 
+ Giving Circle 
+ Legacy giving 
+ Shop with purpose 
+ Sustainer's Club 
+ Tribute gifts 
+ Workplace giving 
+ Advocate 
+ Partner 
+ Events 
+ Fundraise 
+ Walk & Community Days 
+ DIY fundraising 
+ Share your story 
+ Volunteer 
+ Donate plasma 
+ Get involved
+ Be a hero for those with PI. Change lives by promoting primary immunodeficiency (PI) awareness and taking action in your community through advocacy, donating, volunteering, or fundraising.
+ Get involved today 
+ Advancing research and clinical care 
+ Research Grant Program 
+ Consulting immunologist 
+ Diagnosing PI 
+ Getting prior authorization 
+ Clinician education 
+ Survey research 
+ Participating in clinical research 
+ Advancing research and clinical care
+ Whether you’re a clinician, researcher, or an individual with primary immunodeficiency (PI), these resources will help you advance the field. Get details on surveys, grants, and clinical trials.
+ Learn more about research 
+ Locate a PI specialist 
+ Find events 
+ Resources 
+ Login 
+ Donate 
+ Open Search 
+ Search 
+ Search 
+ Menu 
+ Home 
+ Understanding primary immunodeficiency 
+ Diagnosis 
+ Laboratory testing 
+ Key points
+ Healthcare providers use laboratory testing to confirm or exclude primary immunodeficiency (PI) conditions.
+ The clinical history (signs, symptoms, and specific infections) of the affected person are very important in determining which lab tests will be useful and informative in the medical evaluation.
+ Healthcare providers increasingly use genetic testing in addition to lab tests to diagnose PI, but genetic testing has limitations because the specific genetic causes for the most common PI conditions are unknown.
+ An experienced specialist who regularly sees patients with PI, like a clinical immunologist, is the best person to select and interpret lab tests for PI.
+ Medical, or laboratory, tests that measure different parts of the immune system are important for diagnosing someone with primary immunodeficiency (PI) and determining the specific PI they have. Healthcare providers order these tests when a person has signs and symptoms of PI, particularly reoccurring and/or chronic infections, or a family history of PI.
+ The person’s medical history, family history, and physical exam help healthcare providers choose which tests to order. Laboratory testing for PI usually begins with broad tests, followed by more specific tests based on those results. If the person has had infections, information on the types of germs causing infections, the sites of infections, and the medications needed to treat the infections help focus the testing.
+ The most common laboratory tests used to diagnose PI look for:
+ Antibody deficiencies.
+ T cell disorders.
+ Neutrophil disorders.
+ Complement deficiencies.
+ Healthcare providers sometimes use genetic testing , which looks for variants in a person’s genes that cause PI, after completing other laboratory tests to either confirm or refine a diagnosis. Some PI diagnoses, such as activated PI3K delta syndrome (APDS) , are difficult to make without genetic testing because their signs and symptoms, as well as the results of other tests, are similar to other PIs. 
+ Clinician Finder
+ We maintain a database of clinicians who specialize in treating PI. Use our tool to find clinicians across several medical specialties near you.
+ Find a provider 
+ Making sense of laboratory test results
+ To figure out what laboratory test results mean, they must be compared to established reference ranges for that test. To define the reference range, the test maker tests a group of healthy people and looks at their results using statistics. Importantly, reference ranges can vary between laboratories based on local testing procedures and the populations used for reference testing. This variability means that tests done in different laboratories should be compared and interpreted with caution.
+ The 95% confidence interval is a common statistic that test makers use to define a test’s reference range. It is the range of values that includes 95% of the test results from healthy people (as in a bell curve). It is important to note that, when a test’s reference range is a 95% confidence interval, that means 5% of the tested healthy population has test values above or below the range, even though they are healthy. 
+ A 95% confidence interval means that 95% of people in a population fall within the reference range for a test, while 2.5% of people fall above and 2.5% of people fall below the reference range. However, they do not necessarily have health problems. 
+ Think of height as an example. Someone one inch taller than 95% of healthy people does not necessarily have a growth disorder, and someone one inch shorter is not necessarily malnourished. By definition, 2.5% of healthy individuals will be shorter than the 95% confidence interval, and 2.5% will be taller.
+ The fact that 5% of otherwise healthy people fall outside a test’s reference range is important to remember when looking at results—a result outside of the reference range does not automatically mean there is a problem. How important a high or low laboratory test value is depends on context, especially the person’s medical history and the size of the difference from the reference range.
+ For laboratory tests looking at the immune system in children, the age of the group used to define a reference range is important because the immune system matures and changes as children grow. A test’s reference range for babies will be different than for toddlers or teenagers. As a result, all laboratory test results for children must be compared with age-matched reference ranges. If the laboratory reporting the results does not provide age-specific information, it is important to consult with a specialist who knows the published age-specific reference ranges for the test(s).
+ In addition, some laboratory tests may not be sensitive enough to detect a particular immune system problem. Results can also be affected by things like active infections or medications that suppress the immune system.
+ Complete blood count (CBC) with differential
+ One of the most common laboratory tests healthcare providers order is called a complete blood count (CBC). It measures someone’s platelets, hemoglobin, red blood cells, and white blood cells. If a healthcare provider orders a CBC with differential, the laboratory does additional analysis to measure the different kinds of white blood cells, including neutrophils, lymphocytes (which are B cells, T cells, and natural killer (NK) cells together), monocytes, basophils, and eosinophils.
+ Several CBC with differential results can be helpful for diagnosing PI, including: 
+ Absolute lymphocyte count (ALC), which measures the total number of B cells, T cells, and NK cells.
+ Absolute neutrophil count (ANC), which measures the number of neutrophils.
+ Red blood count (RBC), which measures the number of red blood cells.
+ Hemoglobin (Hb), which measures the amount of the protein that carries oxygen within red blood cells from the lungs to other parts of the body. 
+ Platelet count (PLT), which measures the number of a tiny type of blood cell fragment called platelets that help form blood clots.
+ Low numbers of lymphocytes (lymphopenia) can point to T cell problems since 75% of lymphocytes in the bloodstream are T cells. Before newborn screening , a CBC with differential was the first test healthcare providers ordered for babies suspected of having severe combined immune deficiency (SCID) . Note that some people with an ALC within the reference range still have a low number of T cells or T cells that don’t work properly. This means that an ALC within the reference range does not rule out T cell problems.
+ Likewise, low numbers of neutrophils (neutropenia) can point to a problem with neutrophil immunity or to other PIs like CD40 ligand deficiency . Because neutrophil numbers vary over time and in response to infections, healthcare providers looking for PI usually look for consistently low ANCs over time.
+ Both low ALC and low ANC have to be followed up with other tests to diagnose PI because there are many other reasons someone might have low values.
+ Low RBC and Hb levels can point to anemia, which can have many causes including a chronic condition or iron deficiency. In some forms of PI like common variable immune deficiency (CVID), autoimmune hemolytic anemia (AIHA) is a serious complication in which the immune system destroys its own red blood cells. Healthcare providers have to do additional testing to determine if low RBC and Hb levels are caused by AIHA. If a person has AIHA, providers may do additional immune system testing to find out whether it is a symptom of PI or not.
+ Low PLT levels (thrombocytopenia) can also be a complication in some types of PI when the immune system attacks platelets (immune thrombocytopenic purpura; ITP). ITP can happen in CVID and other PIs like autoimmune lymphoproliferative syndrome (ALPS) . People with Wiskott-Aldrich syndrome (WAS) have thrombocytopenia but with low mean platelet volume (MPV), which means that their platelets are also small. Healthcare providers have to do additional tests to find out if someone’s thrombocytopenia might be a symptom of PI.
+ It is important to remember that none of the results from a CBC with differential can diagnose PI alone. They must be followed up with other, more specific tests. In addition, CBC results within the reference ranges do not rule out PI either.
+ Bone marrow biopsy
+ For some PIs, it is important to understand whether a person’s blood cells are being made and maturing properly. A bone marrow biopsy, where healthcare providers use a large needle to remove a sample of the soft tissue from inside the hip bone, can help.
+ Bone marrow is like a factory where blood cells are made. All blood cells, including white blood cells, red blood cells, and platelets, develop from the hematopoietic (literally “blood-making”) stem cells found in bone marrow. A specialist called a pathologist looks at the biopsied marrow under a microscope. The bone marrow biopsy can show whether a person’s bone marrow is making enough white blood cells to fight infections, whether the marrow is damaged or under attack, or if abnormal cells or cancer are crowding out healthy cells.
+ Healthcare providers may order a bone marrow biopsy to help diagnose:
+ SCID , where it can show problems with lymphocyte development and help confirm the diagnosis.
+ Wiskott-Aldrich syndrome , where it can show low or abnormal platelet production.
+ Warts, hypogammaglobulinemia, immunodeficiency, myelokathexis (WHIM) syndrome to see if the marrow is making neutrophils or not.
+ Bone marrow failure syndromes like Fanconi anemia, where the biopsy shows “empty” marrow or very low numbers of cells in the marrow that explain low blood counts.
+ Other marrow related immunodeficiencies, where biopsy can help healthcare providers tell if someone has PI or a different condition such as myelodysplastic syndrome.
+ Testing antibodies and B cells
+ Serum immunoglobulin (Ig) test 
+ If a healthcare provider thinks someone might have an antibody deficiency, the first laboratory test they order is called a serum immunoglobulin (Ig) test [1]. This test measures the levels of IgG, IgA, and IgM antibodies in the person’s blood. Sometimes, the test also measures IgE levels. Note that the results of this test tell the healthcare provider whether someone has enough antibodies in their blood but does not measure how well those antibodies work.
+ The serum Ig test results have to be compared to an age-matched reference range. Also, the IgG results are not useful for babies younger than 6 months of age because they measure the IgG antibodies the baby received from their mother rather than the amount of antibodies the baby is making.
+ Usually, a healthcare provider will confirm low or high values from a single serum Ig test by repeating the test several weeks later. If the second test also shows low or high values, the healthcare provider will order further testing to diagnose PI and find out what type of antibody deficiency (or other PI) the person has.
+ In some cases, a person’s Ig levels will be within the age-matched reference range even though they do have PI. Again, the healthcare provider will order more tests if they strongly suspect the person has a PI based on other information like medical history.
+ Vaccine challenge 
+ The next test for antibody deficiencies is called a vaccine challenge. This test measures how well a person’s immune system can make antibodies against a specific germ, called specific antibodies. However, if someone’s serum Ig test shows no or very low levels of all types of antibodies, healthcare providers may skip the vaccine challenge and go straight to measuring B cells.
+ For the vaccine challenge, healthcare providers first determine the person’s “baseline” specific antibody level to a vaccine. If it is not in the range that experts consider to be protective, the person will receive a dose of the vaccine. The healthcare provider then measures the person’s specific antibody levels again four weeks later. If the person’s antibody levels, also known as titers, do not increase much after being vaccinated, this confirms that the person cannot make specific antibodies. Note that vaccine challenge responses should be interpreted by a healthcare provider who sees individuals with PI on a regular basis, like a clinical immunologist.
+ The vaccine challenge test can be used to measure two different ways the immune system produces antibodies, the T cell-dependent and the T cell-independent pathways. A vaccine challenge with a protein-based vaccine like tetanus/diphtheria (DTaP, Tdap, or Td) tests the T cell-dependent pathway, while using pneumococcal polysaccharide vaccine (Pneumovax 23) tests the T cell-independent pathway. Some people with recurrent infections don’t make antibodies via the T cell-independent pathway, but do make antibodies via the T cell-dependent pathway.
+ Note that if a person is already on immunoglobulin (Ig) replacement therapy , it is difficult to test for specific antibody responses. This is because the test cannot tell the difference between the antibodies from the Ig product and any that might have been made by the person being tested. The solution in this situation is to use vaccines that are not routinely given to the general public and so are unlikely to have specific antibodies in Ig products, such as typhoid or rabies vaccines [1].
+ In a person with a previously diagnosed and well-documented antibody deficiency, stopping Ig replacement therapy to recheck antibody levels and vaccine response is unnecessary and can place the person at risk of getting an infection. However, if someone’s antibody deficiency diagnosis is unclear, it may be necessary to pause Ig replacement therapy for 4-6 months to test antibody levels and specific antibody production.
+ Flow cytometry for B cells 
+ Healthcare providers might order additional tests that measure B cells in a person’s blood if they suspect the person has an antibody deficiency. These tests, known as B cell subset analysis, use a technique called immunophenotyping by flow cytometry to count the number of cells with particular proteins on their surface. Each protein is unique to a different kind of immune cell; see the table below on how these cells may be labeled in lab reports. Flow cytometry can measure overall B cell numbers (CD19+), as well as how many cells a person has at each stage of B cell development. Since problems with different parts of B cell development cause different antibody deficiencies, the results from these tests can help determine which kind of antibody deficiency a person has.
+ How lab reports label immune system cells
+ Cell subsets are indented under the larger cell type group they belong to. Depending on the lab, these subsets may be labeled with all of the markers used to identify them or just the markers that are unique to that subset. For example, cytotoxic T cells may be labeled "CD3+/CD8+" or just "CD8+."
+ Testing T cells
+ Newborn screening TREC test 
+ The first test of a person’s T cell immunity occurs without most people knowing it, through newborn screening . Soon after birth, babies in all 50 U.S. states, plus the District of Columbia, Puerto Rico, Guam, and the Navajo Nation, have a blood sample drawn through a heel prick. State public health laboratories use some of that blood to measure the number of T cells the baby has. This test is called the T cell receptor excision circles (TREC) test.
+ The TREC test screens for PIs, and other conditions, that cause no or very low numbers of T cells, such as SCID. However, TREC results are not enough by themselves to diagnose SCID or any other condition with low T cells. Each state has a set process for further testing for babies who have a low TREC test, which may include repeating the test, confirming the TREC results with another type of test that counts T cells, and genetic testing.
+ Flow cytometry for T cells 
+ As with B cells, healthcare providers can order immunophenotyping flow cytometry tests for T cells that measure overall T cell numbers (CD3+), as well as the number of different types of T cells (cytotoxic T cells are CD8+, while helper T cells are CD4+); see the table above for how these cells may be labeled in lab reports. Healthcare providers might order these tests to confirm a baby’s low TREC test results or if someone has a low ALC result from a CBC with differential.
+ As with B cell flow cytometry tests, T cell flow cytometry tests can reveal high or low numbers of different types of T cells, which helps healthcare providers figure out what kind of T cell problem someone has.
+ T cell function tests 
+ If a healthcare provider thinks there is a problem with how well someone’s T cells work, they may order T cell function tests. During these tests, the laboratory puts a person’s T cells in a dish and adds other substances to see how they respond.
+ The mitogen proliferation assay is a common T cell function test that uses chemicals from plants like concanavalin A, pokeweed, or phytohemagglutinin (PHA). These mitogens cause working T cells to grow and divide, but T cells from people with certain types of PI, such as SCID and Wiskott-Aldrich syndrome , do not respond. This lack of response indicates a significant problem with T cell function.
+ Another T cell function test, called the antigen-induced proliferation test, requires more complex T cell signaling compared to mitogen testing. It uses substances that should activate someone’s memory T cells, like the toxin from Tetanus bacteria or pieces of Candida albicans fungi. Working memory T cells grow and divide and make chemical signals called cytokines when they come across these substances. If someone’s T cells do not respond, that can point to a problem either making memory T cells or in how their memory T cells work, like particular T cell signaling issues. Diagnosing these issues may require more T cell testing, like checking cytokine production, or genetic testing. Very low or no response to Candida can be linked to chronic mucocutaneous candidiasis.
+ However, the antigen-induced proliferation test is not useful in young babies or individuals who have not been recently vaccinated or exposed to the antigen. This is because they may not have memory T cells to the antigen. While this test offers insight into specific immune responses, it is generally less robust than mitogen testing and has to be interpreted carefully.
+ T cell spectratyping 
+ Some PIs, such as ‘leaky’ SCID and ataxia telangiectasia , affect not just the number of T cells but also the diversity of a person’s T cells. Each T cell makes one specific type of T cell receptor (TCR) that recognizes one specific type of germ, similar to how each B cell makes one type of antibody. Individuals without PI have millions to tens of millions of different TCRs, known together as their TCR repertoire. This diverse library of receptors helps the immune system make T cells that recognize a huge number of germs.
+ The T cell spectratyping test uses a blood sample to look at a person’s TCR repertoire and gives providers more information on how a person’s T cells are affected. For example, if someone has SCID caused by a CD3 chain deficiency, spectratyping will show a very small or skewed TCR repertoire. T cell spectratyping can also help providers determine if someone has a primary or secondary immunodeficiency because the TCR patterns differ.
+ Healthcare providers also use T cell spectratyping to monitor people who are recovering from hematopoietic stem cell transplants (HSCTs) . If the transplant is successful and the stem cells start to make new T cells, the test will show increased diversity of TCRs over time. 
+ Testing neutrophils
+ Healthcare providers might order a test called a blood smear if they think there may be a problem with someone’s neutrophils. For a blood smear, the laboratory takes a drop of blood and spreads it across a microscope slide, then looks at the cells for any visible problems. A careful review of the blood smear is important to rule out certain conditions that are associated with problems in the structure of neutrophils. Specific abnormal neutrophil features can occur in rare PIs such as Chediak-Higashi syndrome, but other structural changes may point to nutritional deficiencies, bone marrow disorders, or autoimmune conditions.
+ If initial tests of neutrophil numbers and appearance don’t find a problem, testing then focuses on two possible types of PI: chronic granulomatous disease (CGD) and leukocyte adhesion deficiency (LAD) . People with these disorders have either typical or high neutrophil numbers, so their ANC will be either in or above the reference range. Each of these disorders has distinctive signs and symptoms that can help healthcare providers choose the appropriate testing.
+ Laboratory testing to diagnose CGD looks at how well a person’s neutrophils make reactive oxygen, a group of chemicals these white blood cells use to kill certain bacteria and fungi. This process, called the oxidative burst, can be measured using several different methods. The most common and reliable method uses flow cytometry to measure the oxidative burst of activated neutrophils using a dye called dihydrorhodamine (DHR). The DHR test is more sensitive than other tests and can point to whether someone has X-linked or autosomal recessive CGD [2]. It can also help identify carriers of CGD. Once the DHR test shows that someone has CGD, healthcare providers will order genetic testing to confirm which type of CGD the person has.
+ Laboratory testing for the most common form of LAD, called LAD1, uses flow cytometry to look for CD18/CD11a on the surface of neutrophils and other white blood cells. When this protein is missing, neutrophils can’t move to sites of infection, so there is an increased number of these cells in the person’s bloodstream.
+ Testing the complement system
+ PIs affecting the complement system typically cause recurrent infections with specific types of sugar-coated bacteria like Streptococcus pneumoniae or Neisseria meningitidis , or serious autoimmune issues, most often systemic lupus erythematosus (SLE). If a healthcare provider thinks someone has a complement system problem, they may order an initial test called the total hemolytic complement assay (CH50). This test measures the combined activity of the nine proteins in the classical complement pathway in a person’s blood. Someone who lacks or has a problem with any one protein in the pathway will have almost no measurable complement in the CH50 test. However, the test does not tell healthcare providers which complement protein is missing or not working.
+ The AH50 test, which is similar to the CH50 test, uses a blood sample to measure how well the alternate complement pathway works. There are some very rare PIs that affect proteins that are part of the alternate complement pathway but not in the classical pathway. In these cases, the person would have CH50 results within the reference range, but would not have measurable complement with the AH50 test.
+ Because the classical and alternative complement pathways share some proteins, the AH50 test can help narrow down which complement protein is missing or doesn’t work in someone who does not have measurable CH50 results [3]. Specialized laboratories can do additional testing to find out exactly which complement protein is affected.
+ Testing other parts of the innate immune system
+ Laboratory tests can also measure parts of the innate immune system aside from neutrophils and the complement system. These tests are typically used only in very specific situations when a person’s clinical history and symptoms suggest a very rare PI. For instance, determining the number and activity of natural killer (NK) cells (CD16+/CD 56+) can help diagnose a person with frequent and severe recurring herpesvirus infections. Healthcare providers might test the function of various cell surface proteins such as toll-like receptors (TLRs) if someone has severe, recurrent invasive infections and the usual comprehensive testing for PI fails to identify a specific cause or diagnosis.
+ Page references 
+ Klangkalya N, Fleisher TA, Rosenzweig SD. Diagnostic tests for primary immunodeficiency disorders: Classic and genetic testing . Allergy Asthma Proc. 2024;45: 355–363.
+ Vowells SJ, Fleisher TA, Sekhsaria S, Alling DW, Maguire TE, Malech HL. Genotype-dependent variability in flow cytometric evaluation of reduced nicotinamide adenine dinucleotide phosphate oxidase function in patients with chronic granulomatous disease . J Pediatr. 1996;128: 104–107.
+ Bonilla FA, Khan DA, Ballas ZK, Chinen J, Frank MM, Hsu JT, et al. Practice parameter for the diagnosis and management of primary immunodeficiency. J Allergy Clin Immunol. 2015;136: 1186–205.e1–78.
+ This page contains general medical and/or legal information that cannot be applied safely to any individual case. Medical and/or legal knowledge and practice can change rapidly. Therefore, this page should not be used as a substitute for professional medical and/or legal advice. Additionally, links to other resources and websites are shared for informational purposes only and should not be considered an endorsement by the Immune Deficiency Foundation. 
+ Adapted from the Patient & Family Handbook for Primary Immunodeficiency Diseases, Sixth Edition . 
+ Copyright ©2019 by Immune Deficiency Foundation, USA. 
+ Sign up for updates
+ Receive news and helpful resources to your cell phone or inbox. You can change or cancel your subscription at any time.
+ Subscribe to text or email updates 
+ Facebook 
+ X 
+ Linked In 
+ Instagram 
+ YouTube 
+ Immune Deficiency Foundation
+ 7550 Teague Road, Suite 220
+ Hanover, Maryland 21076
+ P: 410-321-6647 
+-->
+ About 
+ Press room 
+ Contact us 
+ Careers 
+ The Immune Deficiency Foundation improves the diagnosis, treatment, and quality of life for every person affected by primary immunodeficiency.​
+ We foster a community that is connected, engaged, and empowered through advocacy, education, and research.
+ Donate 
+ Terms of Use & Policies 
+ © 2026 Immune Deficiency Foundation | Immune Deficiency Foundation is a 501(c)(3) organization (EIN: 52-1214782 )

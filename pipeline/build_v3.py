@@ -393,6 +393,55 @@ for pin in _NOTES.get("tier", []):
     row["t"] = pin["t"]
 
 # ---------------------------------------------------------------------------
+# SYSTEM VIEWS — a concern seen as a system (data/systems/*.json): what your
+# panel already says, what it cannot, what to measure first, what can wait,
+# and when you know enough. Every sentence shown is a quote, re-checked here
+# against the page snapshot it was cut from, so it cannot drift into
+# paraphrase. Tests are named by analyte and must resolve to rows this
+# concern actually carries, so every one of them opens like any other row.
+# ---------------------------------------------------------------------------
+def squash(t):
+    t = re.sub(r"\s+", " ", t)
+    return re.sub(r" ([.,;:)])", lambda m: m.group(1), t).strip()
+
+_PAGES = {}
+def cited(q):
+    if q["file"] not in _PAGES:
+        _PAGES[q["file"]] = squash(io.open(os.path.join(ROOT, "data", "sources", q["file"] + ".txt"), encoding="utf8").read())
+    assert squash(q["q"]) in _PAGES[q["file"]], "quote not in %s: %r" % (q["file"], q["q"][:80])
+    return {"q": q["q"], "s": q["s"], "u": q["u"]}
+
+CID = {c["id"]: ci for ci, c in concerns.items()}
+SYSTEMS, SYSFROM = {}, {}
+SYSDIR = os.path.join(ROOT, "data", "systems")
+for fn in sorted(os.listdir(SYSDIR)):
+    if not fn.endswith(".json"):
+        continue
+    sd = json.loads(io.open(os.path.join(SYSDIR, fn), encoding="utf8").read())
+    ci = CID[sd["concern"]]
+    rowat = {t["n"]: i for i, t in enumerate(concerns[ci]["next"])}
+    def tests(names, _rowat=rowat, _fn=fn):
+        for n in names:
+            assert n in _rowat, "%s names %r, which %r does not carry" % (_fn, n, sd["concern"])
+        return [_rowat[n] for n in names]
+    qs = []
+    for q in sd["questions"]:
+        out = {"ask": q["ask"], "cite": [cited(c) for c in q.get("cite", [])]}
+        if "markers" in q:
+            for sl in q["markers"]:
+                assert sl in markers, "%s names marker %r" % (fn, sl)
+            out["markers"] = q["markers"]
+        if "tests" in q:
+            out["tests"] = tests(q["tests"])
+        if "steps" in q:
+            out["steps"] = [{"label": st["label"], "tests": tests(st["tests"]), "cite": [cited(st["cite"])]}
+                            for st in q["steps"]]
+        qs.append(out)
+    SYSTEMS[ci] = {"title": sd["title"], "signs": [cited(c) for c in sd.get("signs", [])], "questions": qs}
+    for other, q in sd.get("from", {}).items():
+        SYSFROM[CID[other]] = {"to": ci, "title": sd["title"], "cite": cited(q)}
+
+# ---------------------------------------------------------------------------
 # 3. RELATIONSHIP NOTES — every one a verbatim quote from a fetched page
 # ---------------------------------------------------------------------------
 def R(a, b, when, quote, src, url, kind="relationship"):
@@ -528,6 +577,8 @@ PAY = {
  "cgroups": CGROUPS,
  "rel": REL,
  "off": OFFPANEL,
+ "systems": SYSTEMS,
+ "sysFrom": SYSFROM,
  "meta": {
    "total": len(TESTS), "base": len(base_idx),
    "nConcerns": len(CONCERNS), "panelConcerns": len(panel_concerns),
@@ -568,6 +619,9 @@ print("  your annual panel: %d sections, %d markers, %d components not in the ca
       % (sum(1 for _p in PANEL_ORDER if _p.get("grp") == "ANNUAL"), len(ann_slugs),
          sum(_p["nMissing"] for _p in PANEL_ORDER if _p.get("grp") == "ANNUAL")))
 print("  %d sourced relationship notes" % len(REL))
+print("  %d system view(s): %s" % (len(SYSTEMS), ", ".join("%s (%d quotes)" % (concerns[ci]["label"],
+      sum(len(q["cite"]) + sum(len(st["cite"]) for st in q.get("steps", [])) for q in s["questions"]) + len(s["signs"]))
+      for ci, s in SYSTEMS.items())))
 print("  %s follow-up tests sit outside the panel for those concerns" % format(m["offPanelForPanelConcerns"], ","))
 print("  %d distinct follow-up markers carried (cap 40 per concern)" % sum(len(c["next"]) for c in concerns.values()))
 print("  families per concern: median %d, max %d" % (sorted(len(c["fams"]) for c in concerns.values())[len(concerns)//2], max(len(c["fams"]) for c in concerns.values())))

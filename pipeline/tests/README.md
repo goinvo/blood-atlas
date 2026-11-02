@@ -30,6 +30,7 @@ Every check here is a mistake that shipped once:
 | `guide-restarts` | two loads sharing one localStorage: a refresh opens at step 1, Skip lasts the visit only, nothing about the guide is written to storage | a tutorial that resumes mid-way, or one that vanishes for good after a single run |
 | `no-landing` | catalogue.html with no hash, `#landing`, `#feel` and `#tests` all open a real view; the route chooser never appears | a front door that asks which door you want |
 | `table-view` | the All tests tab switches view in place; the catalogue is fetched once and only on open; counts are the true totals; paging states what it is not showing; filters match the data; the map returns intact | a table that silently truncates, a count that lies, or the 2.8MB catalogue creeping into the front door |
+| `system-view` | each system view draws all five questions, every quote with its source link, your own marks read back correctly, its tests open like list rows, and the concerns that lead to it do | a question with nothing under it, a quote that lost its source, a pointer to a view that does not open |
 | `title-band` | band opaque and above the canvas, three titles in it, legend fully removed, counts moved to the header | a background painted with an undefined variable; dead layout reserved for a deleted panel |
 
 The window size is stubbed through `clientWidth` / `clientHeight`, so these are

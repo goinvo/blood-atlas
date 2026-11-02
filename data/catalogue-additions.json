@@ -1,0 +1,355 @@
+{
+ "_about": "Rows added to, and corrections made in, data/catalogue.json by pipeline/apply_catalogue_additions.py. Every quote is cut from a page snapshot in data/sources/, and the build re-checks it there.",
+ "add": [
+  {
+   "n": "Immunoglobulin G (IgG)",
+   "a": "",
+   "g": 9,
+   "c": "Antibody level",
+   "t": 8,
+   "v": 1,
+   "k": [
+    29
+   ],
+   "p": [
+    6
+   ],
+   "q": "\"IgG antibodies are much more common and much more specialized. Your body creates these antibodies as a response to a specific germ and even remembers them after you've cleared the infection.\"",
+   "qs": "MedlinePlus (NIH)",
+   "w": "",
+   "r": [
+    [
+     "https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/",
+     "MedlinePlus"
+    ],
+    [
+     "https://loinc.org/2465-3/",
+     "LOINC"
+    ]
+   ],
+   "b": 0,
+   "ag": [],
+   "sx": [],
+   "sr": 0,
+   "x": "",
+   "lc": "SERO",
+   "_quote": {
+    "q": "IgG antibodies are much more common and much more specialized. Your body creates these antibodies as a response to a specific germ and even remembers them after you've cleared the infection.",
+    "s": "MedlinePlus (NIH)",
+    "u": "https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/",
+    "file": "medlineplus-immunoglobulins"
+   }
+  },
+  {
+   "n": "Immunoglobulin A (IgA)",
+   "a": "",
+   "g": 9,
+   "c": "Antibody level",
+   "t": 8,
+   "v": 1,
+   "k": [
+    29
+   ],
+   "p": [
+    6
+   ],
+   "q": "\"IgA antibodies protect your respiratory tract (the organs you use to breathe) and your digestive system (the organs you use to eat and digest food) from infections.\"",
+   "qs": "MedlinePlus (NIH)",
+   "w": "",
+   "r": [
+    [
+     "https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/",
+     "MedlinePlus"
+    ],
+    [
+     "https://loinc.org/2458-8/",
+     "LOINC"
+    ]
+   ],
+   "b": 0,
+   "ag": [],
+   "sx": [],
+   "sr": 0,
+   "x": "",
+   "lc": "SERO",
+   "_quote": {
+    "q": "IgA antibodies protect your respiratory tract (the organs you use to breathe) and your digestive system (the organs you use to eat and digest food) from infections.",
+    "s": "MedlinePlus (NIH)",
+    "u": "https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/",
+    "file": "medlineplus-immunoglobulins"
+   }
+  },
+  {
+   "n": "Immunoglobulin M (IgM)",
+   "a": "",
+   "g": 9,
+   "c": "Antibody level",
+   "t": 8,
+   "v": 1,
+   "k": [
+    29
+   ],
+   "p": [
+    6
+   ],
+   "q": "\"IgM antibodies are the first immunoglobulins your body makes after you're exposed to a germ. They provide short-term protection while your body makes other antibodies.\"",
+   "qs": "MedlinePlus (NIH)",
+   "w": "",
+   "r": [
+    [
+     "https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/",
+     "MedlinePlus"
+    ],
+    [
+     "https://loinc.org/2472-9/",
+     "LOINC"
+    ]
+   ],
+   "b": 0,
+   "ag": [],
+   "sx": [],
+   "sr": 0,
+   "x": "",
+   "lc": "SERO",
+   "_quote": {
+    "q": "IgM antibodies are the first immunoglobulins your body makes after you're exposed to a germ. They provide short-term protection while your body makes other antibodies.",
+    "s": "MedlinePlus (NIH)",
+    "u": "https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/",
+    "file": "medlineplus-immunoglobulins"
+   }
+  },
+  {
+   "n": "Tetanus antibody response (IgG)",
+   "a": "",
+   "g": 9,
+   "c": "Vaccine response",
+   "t": 0,
+   "v": 1,
+   "k": [
+    29
+   ],
+   "p": [
+    6
+   ],
+   "q": "\"A vaccine challenge with a protein-based vaccine like tetanus/diphtheria (DTaP, Tdap, or Td) tests the T cell-dependent pathway, while using pneumococcal polysaccharide vaccine (Pneumovax 23) tests the T cell-independent pathway.\"",
+   "qs": "Immune Deficiency Foundation",
+   "w": "",
+   "r": [
+    [
+     "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "Immune Deficiency Foundation"
+    ],
+    [
+     "https://loinc.org/53935-3/",
+     "LOINC"
+    ]
+   ],
+   "b": 0,
+   "ag": [],
+   "sx": [],
+   "sr": 0,
+   "x": "",
+   "lc": "SERO",
+   "_quote": {
+    "q": "A vaccine challenge with a protein-based vaccine like tetanus/diphtheria (DTaP, Tdap, or Td) tests the T cell-dependent pathway, while using pneumococcal polysaccharide vaccine (Pneumovax 23) tests the T cell-independent pathway.",
+    "s": "Immune Deficiency Foundation",
+    "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+    "file": "idf-laboratory-tests"
+   }
+  },
+  {
+   "n": "Pneumococcal antibody response, 23 serotypes (IgG)",
+   "a": "",
+   "g": 9,
+   "c": "Vaccine response",
+   "t": 0,
+   "v": 1,
+   "k": [
+    29
+   ],
+   "p": [
+    6
+   ],
+   "q": "\"A vaccine challenge with a protein-based vaccine like tetanus/diphtheria (DTaP, Tdap, or Td) tests the T cell-dependent pathway, while using pneumococcal polysaccharide vaccine (Pneumovax 23) tests the T cell-independent pathway.\"",
+   "qs": "Immune Deficiency Foundation",
+   "w": "",
+   "r": [
+    [
+     "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "Immune Deficiency Foundation"
+    ],
+    [
+     "https://loinc.org/42366-5/",
+     "LOINC"
+    ]
+   ],
+   "b": 0,
+   "ag": [],
+   "sx": [],
+   "sr": 0,
+   "x": "",
+   "lc": "SERO",
+   "_quote": {
+    "q": "A vaccine challenge with a protein-based vaccine like tetanus/diphtheria (DTaP, Tdap, or Td) tests the T cell-dependent pathway, while using pneumococcal polysaccharide vaccine (Pneumovax 23) tests the T cell-independent pathway.",
+    "s": "Immune Deficiency Foundation",
+    "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+    "file": "idf-laboratory-tests"
+   }
+  },
+  {
+   "n": "B cells (CD19)",
+   "a": "",
+   "g": 0,
+   "c": "Lymphocyte subset",
+   "t": 0,
+   "v": 1,
+   "k": [
+    29
+   ],
+   "p": [
+    6
+   ],
+   "q": "\"Flow cytometry can measure overall B cell numbers (CD19+), as well as how many cells a person has at each stage of B cell development.\"",
+   "qs": "Immune Deficiency Foundation",
+   "w": "",
+   "r": [
+    [
+     "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "Immune Deficiency Foundation"
+    ],
+    [
+     "https://loinc.org/8116-6/",
+     "LOINC"
+    ]
+   ],
+   "b": 0,
+   "ag": [],
+   "sx": [],
+   "sr": 0,
+   "x": "",
+   "lc": "CELLMARK",
+   "_quote": {
+    "q": "Flow cytometry can measure overall B cell numbers (CD19+), as well as how many cells a person has at each stage of B cell development.",
+    "s": "Immune Deficiency Foundation",
+    "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+    "file": "idf-laboratory-tests"
+   }
+  },
+  {
+   "n": "Helper T cells (CD4)",
+   "a": "",
+   "g": 0,
+   "c": "Lymphocyte subset",
+   "t": 0,
+   "v": 1,
+   "k": [
+    29
+   ],
+   "p": [
+    6
+   ],
+   "q": "\"As with B cells, healthcare providers can order immunophenotyping flow cytometry tests for T cells that measure overall T cell numbers (CD3+), as well as the number of different types of T cells (cytotoxic T cells are CD8+, while helper T cells are CD4+)\"",
+   "qs": "Immune Deficiency Foundation",
+   "w": "",
+   "r": [
+    [
+     "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "Immune Deficiency Foundation"
+    ],
+    [
+     "https://loinc.org/24467-3/",
+     "LOINC"
+    ]
+   ],
+   "b": 0,
+   "ag": [],
+   "sx": [],
+   "sr": 0,
+   "x": "",
+   "lc": "CELLMARK",
+   "_quote": {
+    "q": "As with B cells, healthcare providers can order immunophenotyping flow cytometry tests for T cells that measure overall T cell numbers (CD3+), as well as the number of different types of T cells (cytotoxic T cells are CD8+, while helper T cells are CD4+)",
+    "s": "Immune Deficiency Foundation",
+    "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+    "file": "idf-laboratory-tests"
+   }
+  }
+ ],
+ "fix": [
+  {
+   "n": "Complement total hemolytic CH50 [Measurement] in Serum or Plasma",
+   "set": {
+    "g": 9,
+    "c": "Complement",
+    "v": 1,
+    "q": "\"If a healthcare provider thinks someone has a complement system problem, they may order an initial test called the total hemolytic complement assay (CH50). This test measures the combined activity of the nine proteins in the classical complement pathway in a person’s blood.\"",
+    "qs": "Immune Deficiency Foundation",
+    "r": [
+     [
+      "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+      "Immune Deficiency Foundation"
+     ],
+     [
+      "https://loinc.org/108754-3/",
+      "LOINC"
+     ]
+    ]
+   },
+   "_quote": {
+    "q": "If a healthcare provider thinks someone has a complement system problem, they may order an initial test called the total hemolytic complement assay (CH50). This test measures the combined activity of the nine proteins in the classical complement pathway in a person’s blood.",
+    "s": "Immune Deficiency Foundation",
+    "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+    "file": "idf-laboratory-tests"
+   },
+   "why": "was filed under Therapeutic drug / toxicology with a drug-dosing description; CH50 measures complement"
+  },
+  {
+   "n": "IgE [Measurement] in Serum or Plasma",
+   "set": {
+    "g": 9,
+    "c": "Antibody level",
+    "q": "Measures IgE in serum or plasma."
+   },
+   "why": "was filed under Therapeutic drug / toxicology with a drug-dosing description; IgE is an antibody"
+  },
+  {
+   "n": "White Blood Cell count",
+   "addk": [
+    29
+   ],
+   "_quote": {
+    "q": "Several CBC with differential results can be helpful for diagnosing PI, including:",
+    "s": "Immune Deficiency Foundation",
+    "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+    "file": "idf-laboratory-tests"
+   },
+   "why": "the CBC with differential is the first look at immune defense"
+  },
+  {
+   "n": "Lymphocytes/Leukocytes in Blood",
+   "addk": [
+    29
+   ],
+   "_quote": {
+    "q": "Absolute lymphocyte count (ALC), which measures the total number of B cells, T cells, and NK cells.",
+    "s": "Immune Deficiency Foundation",
+    "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+    "file": "idf-laboratory-tests"
+   },
+   "why": "the CBC with differential is the first look at immune defense"
+  },
+  {
+   "n": "Neutrophils/Leukocytes in Blood",
+   "addk": [
+    29
+   ],
+   "_quote": {
+    "q": "Healthcare providers might order a test called a blood smear if they think there may be a problem with someone’s neutrophils.",
+    "s": "Immune Deficiency Foundation",
+    "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+    "file": "idf-laboratory-tests"
+   },
+   "why": "neutrophil problems are part of the immune workup"
+  }
+ ]
+}

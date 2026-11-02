@@ -1,0 +1,123 @@
+URL: https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/
+Fetched: 2026-11-02 (page text, tags stripped)
+
+Immunoglobulins Blood Test: MedlinePlus Medical Test 
+ Skip navigation 
+ Official websites use .gov 
+A
+ .gov website belongs to an official government
+ organization in the United States.
+ Secure .gov websites use HTTPS 
+A
+ lock (
+ Lock 
+ Locked padlock icon 
+ ) or https:// means you’ve safely connected to
+ the .gov website. Share sensitive information only on official,
+ secure websites.
+ You Are Here: 
+ Home 
+ →
+ Medical Tests 
+ →
+ Immunoglobulins Blood Test 
+ URL of this page: https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/ 
+ Immunoglobulins Blood Test
+ What is an immunoglobulins blood test?
+ An immunoglobulins blood test measures the amount of immunoglobulins in your blood. Immunoglobulins are also called antibodies. Antibodies are proteins that your immune system makes to fight germs , such as viruses and bacteria . Your body makes different kinds of antibodies to fight germs in different parts of the body and at different stages of an infection.
+ An immunoglobulins test usually measures the three main types of immunoglobulin (Ig) antibodies that your body makes.
+ IgM antibodies are the first immunoglobulins your body makes after you're exposed to a germ. They provide short-term protection while your body makes other antibodies. They can be found in your blood and lymph fluid (the substance that carries disease-fighting cells throughout your body).
+ IgG antibodies are much more common and much more specialized. Your body creates these antibodies as a response to a specific germ and even remembers them after you've cleared the infection. That way, if you're exposed to the same germs again, your immune system can quickly make more antibodies. Though present in all your bodily fluids, they are most commonly found in your blood.
+ IgA antibodies protect your respiratory tract (the organs you use to breathe) and your digestive system (the organs you use to eat and digest food) from infections. You have IgA antibodies in your blood, saliva, tears, breast milk, and respiratory and gastric fluids.
+ Other names: quantitative immunoglobulins, total immunoglobulins, IgG, IgM, IgA testing
+ What is it used for?
+ An immunoglobulins blood test can help your health care provider diagnose different types of health conditions that may affect your immune system. A variety of conditions can cause abnormal levels of IgM, IgG, and/or IgA, such as:
+ Autoimmune disorders . With these disorders your immune system attacks your own healthy cells by mistake. Examples of autoimmune disorders include rheumatoid arthritis and lupus .
+ Certain types of cancer that affect your bone marrow , blood, or immune system.
+ Chronic (long-term) infections.
+ Genetic diseases you're born with (uncommon).
+ Infections a baby may be born with, such as syphilis or toxoplasmosis .
+ Why do I need an immunoglobulins blood test?
+ You may need this test if you have symptoms of low immunoglobulin production. One of the main symptoms of low immunoglobulin levels is frequent infections, especially repeated infections from the same germ. Other symptoms often include:
+ Sinus, throat, and ear infections, especially strep throat .
+ Respiratory infections, such as pneumonia and bronchitis .
+ Diarrhea and/or gastrointestinal infections.
+ Serious infections from germs that don't usually cause problems in healthy people, such as:
+ Cytomegalovirus (a virus related to chickenpox).
+ A yeast infection in the mouth, eyes, or digestive tract (thrush).
+ You may also need this test if immunodeficiency runs in your family, or your provider thinks you may have a problem making normal levels of immunoglobulins. Low immunoglobulin levels may be a sign of an immunodeficiency (a condition where your body's immune system can't effectively respond to an infection).
+ Lastly, you may need this test if your provider thinks your immunoglobulin levels are too high. Some autoimmune diseases and cancers can cause a high level of immunoglobulins. However, those immunoglobulins don't work normally. So, even though your levels are high, you may still get frequent infections.
+ What happens during an immunoglobulins blood test?
+ A health care professional will take a blood sample from a vein in your arm, using a small needle. After the needle is inserted, a small amount of blood will be collected into a test tube or vial. You may feel a little sting when the needle goes in or out. This usually takes less than five minutes.
+ Will I need to do anything to prepare for the test?
+ You don't need any special preparations for an immunoglobulins blood test. If you or your child is taking any medicines, be sure to tell your child's or your provider before the test. Some medicines can affect the accuracy of the results. But don't stop taking any medicines unless your provider tells you to.
+ Are there any risks to the test?
+ There is very little risk to having a blood test. You may have slight pain or bruising at the spot where the needle was put in, but most symptoms go away quickly.
+ What do the results mean?
+ Your provider will compare your levels of IgM, IgG, and IgA. Your results can mean different things, depending on your symptoms, any conditions you may have, and which immunoglobulins are high or low. An immunoglobulins blood test alone cannot diagnose any conditions. So if your results aren't normal, you'll probably need more testing to find out what's affecting your immune system.
+ Some possible causes of low levels of one or more immunoglobulins are: 
+ Conditions that may reduce the amount of protein in your body, including:
+ Kidney disease 
+ Serious burns 
+ Certain malabsorption disorders
+ Malnutrition 
+ Conditions that affect your ability to make immunoglobulins, including:
+ Complications from diabetes 
+ Kidney failure 
+ A genetic disease that you were born with, such as common variable immunodeficiency disorder (CVID)
+ Some possible causes of high levels of one or more immunoglobulins are: 
+ An autoimmune disease
+ Hepatitis 
+ Cirrhosis 
+ A chronic infection
+ Certain cancers. These cancers often cause a very high level of one type of immunoglobulin and low levels for the other types:
+ Multiple myeloma 
+ Chronic lymphocytic leukemia (CLL) 
+ Lymphoma 
+ Waldenström macroglobulinemia 
+ If your immunoglobulin levels aren't normal, it doesn't always mean you have a condition that needs treatment. Certain medicines can affect your results. If you have questions about your results, talk with your provider. The earlier you start treating abnormal immunoglobulin levels, the more likely you are to treat its underlying cause.
+ Learn more about laboratory tests, reference ranges, and understanding results .
+ Is there anything else I need to know about an immunoglobulins blood test?
+ Depending on your results, your provider may order additional tests. These may include:
+ A lumbar puncture. If your symptoms show that an immune condition may be affecting your spine or brain, your provider may order this test to check the immunoglobulin levels in your cerebrospinal fluid (CSF) .
+ A saliva test. Your provider may order this test to check the IgA levels in your saliva if your symptoms include frequent colds, sinus infections, or diarrhea.
+ A Serum (blood) and/or urine protein electrophoresis test. This test helps providers check for and monitor conditions associated with abnormal immunoglobulin production.
+ References
+ Cleveland Clinic: Health Library: Diagnostics & Testing [Internet]. Cleveland (OH): Cleveland Clinic; c2025. Blood Tests; [reviewed 2022 Dec 06; cited 2025 May 15]; [about 16 screens]. Available from: https://my.clevelandclinic.org/health/diagnostics/24508-blood-tests 
+ Johns Hopkins Medicine [Internet]. The Johns Hopkins University; The Johns Hopkins Hospital, and Johns Hopkins Health System; c2025. Treatments, Tests and Therapies: Lumbar Puncture [cited 2025 May 14]; [about 6 screens]. Available from: https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/lumbar-puncture 
+ Justiz Vaillant AA, Jamal Z, Ramphul K. Immunoglobulin. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Jan-. [Updated 2023 Aug 28; cited 2025 May 15]; Available from: https://www.ncbi.nlm.nih.gov/books/NBK513460/ 
+ Labcorp [Internet]. Burlington (NC).: Laboratory Corporation of America(r) Holdings; c2025. Immunoglobulins, Quantitative, IgA, IgE, IgG, IgM; [cited 2025 May 15]; [about 3 screens]. Available from: https://www.labcorp.com/tests/002295/immunoglobulins-quantitative-iga-ige-igg-igm#test-details 
+ Mayo Clinic: Mayo Medical Laboratories [Internet]. Mayo Foundation for Medical Education and Research; c1995-2025. Test ID: IMMG: Immunoglobulins (IgG, IgA, and IgM), Serum: Clinical and Interpretative [cited 2025 May 15]; [about 3 screens]. Available from: https://www.mayocliniclabs.com/test-catalog/overview/8156#Clinical-and-Interpretive 
+ Merck Manual Consumer Version [Internet]. Kenilworth (NJ): Merck & Co. Inc.; c2025. Autoimmune Disorders [modified 2024 Aug; cited 2025 May 15]; [about 10 screens]. Available from: http://www.merckmanuals.com/home/immune-disorders/allergic-reactions-and-other-hypersensitivity-disorders/autoimmune-disorders 
+ Merck Manual Consumer Version [Internet]. Kenilworth (NJ): Merck & Co. Inc.; c2025. Overview of Immunodeficiency Disorders [modified 2025 Jan; cited 2025 May 15]; [about 15 screens]. Available from: https://www.merckmanuals.com/home/immune-disorders/immunodeficiency-disorders/overview-of-immunodeficiency-disorders#v779249 
+ Nemours KidsHealth [Internet]. Jacksonville (FL): The Nemours Foundation; c1995-2025. Blood Test: Immunoglobulins (IgA, IgG, IgM); [reviewed 2020 Apr; cited 2025 May 15]; [about 8 screens]. Available from: https://kidshealth.org/en/parents/test-immunoglobulins.html 
+ Nemours KidsHealth [Internet]. Jacksonville (FL): The Nemours Foundation; c1995-2025. Getting a Blood Test; [reviewed 2021 Sep; cited 2025 May 15]; [about 4 screens]. Available from: https://kidshealth.org/en/parents/blood-tests.html 
+ Testing.com [Internet]. Seattle (WA).: OneCare Media; c2022. Immunoglobulins (IgA, IgG, IgM); [modified 2021 Nov 9; cited 2022 Jun 2]; [about 16 screens]. Available from: https://www.testing.com/tests/immunoglobulins-iga-igg-igm/ 
+ Related Health Topics
+ Autoimmune Diseases 
+ Cirrhosis 
+ Hepatitis 
+ Immune System and Disorders 
+ Infectious Diseases 
+ Kidney Diseases 
+ Lupus 
+ Multiple Myeloma 
+ Multiple Sclerosis 
+ Rheumatoid Arthritis 
+ Scleroderma 
+ Related Medical Tests
+ ANA (Antinuclear Antibody) Test 
+ Cerebrospinal Fluid (CSF) Analysis 
+ Complete Blood Count (CBC) 
+ CSF Immunoglobulin G (IgG) Index 
+ Free Light Chains 
+ How to Cope with Medical Test Anxiety 
+ How to Understand Your Lab Results 
+ Protein in Urine 
+ What You Need to Know About Blood Testing 
+ MedlinePlus Genetics
+ Common variable immune deficiency 
+ Waldenström macroglobulinemia 
+ What are the different ways a genetic condition can be inherited? 
+ The information on this site should not be used as a substitute for professional medical care or advice. Contact a health care provider if you have questions about your health.
+ Learn how to cite this page

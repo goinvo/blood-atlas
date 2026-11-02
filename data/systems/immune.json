@@ -1,0 +1,160 @@
+{
+ "_about": "A concern seen as a system: what your panel already says, what it cannot, what to measure first, what can wait, and when you know enough. Every sentence shown is a quote, re-checked against data/sources/ at build time; the five questions are the frame, not claims. Tests are named by their catalogue analyte and resolved to the concern's follow-up rows.",
+ "concern": "immunodef",
+ "title": "Your immune defenses",
+ "from": {
+  "infection": {
+   "q": "One of the main symptoms of low immunoglobulin levels is frequent infections, especially repeated infections from the same germ.",
+   "s": "MedlinePlus (NIH)",
+   "u": "https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/",
+   "file": "medlineplus-immunoglobulins"
+  }
+ },
+ "signs": [
+  {
+   "q": "One pneumonia per year for more than 1 year",
+   "s": "Jeffrey Modell Foundation",
+   "u": "https://info4pi.org/information-booth/10-warning-signs/",
+   "file": "jmf-10-warning-signs"
+  },
+  {
+   "q": "Respiratory infections, such as pneumonia and bronchitis.",
+   "s": "MedlinePlus (NIH)",
+   "u": "https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/",
+   "file": "medlineplus-immunoglobulins"
+  }
+ ],
+ "questions": [
+  {
+   "ask": "What do we know?",
+   "markers": [
+    "wbc",
+    "neutrophils",
+    "lymphocytes"
+   ],
+   "cite": [
+    {
+     "q": "Several CBC with differential results can be helpful for diagnosing PI, including:",
+     "s": "Immune Deficiency Foundation",
+     "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "file": "idf-laboratory-tests"
+    },
+    {
+     "q": "It is important to remember that none of the results from a CBC with differential can diagnose PI alone.",
+     "s": "Immune Deficiency Foundation",
+     "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "file": "idf-laboratory-tests"
+    }
+   ]
+  },
+  {
+   "ask": "What don't we know?",
+   "tests": [
+    "Immunoglobulin G (IgG)",
+    "Immunoglobulin A (IgA)",
+    "Immunoglobulin M (IgM)",
+    "Tetanus antibody response (IgG)",
+    "Pneumococcal antibody response, 23 serotypes (IgG)",
+    "B cells (CD19)",
+    "Helper T cells (CD4)",
+    "Complement total hemolytic CH50"
+   ],
+   "cite": [
+    {
+     "q": "In addition, CBC results within the reference ranges do not rule out PI either.",
+     "s": "Immune Deficiency Foundation",
+     "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "file": "idf-laboratory-tests"
+    }
+   ]
+  },
+  {
+   "ask": "What matters now?",
+   "tests": [
+    "Immunoglobulin G (IgG)",
+    "Immunoglobulin A (IgA)",
+    "Immunoglobulin M (IgM)"
+   ],
+   "cite": [
+    {
+     "q": "If a healthcare provider thinks someone might have an antibody deficiency, the first laboratory test they order is called a serum immunoglobulin (Ig) test",
+     "s": "Immune Deficiency Foundation",
+     "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "file": "idf-laboratory-tests"
+    },
+    {
+     "q": "This test measures the levels of IgG, IgA, and IgM antibodies in the person’s blood.",
+     "s": "Immune Deficiency Foundation",
+     "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "file": "idf-laboratory-tests"
+    }
+   ]
+  },
+  {
+   "ask": "What can wait?",
+   "steps": [
+    {
+     "label": "How well the antibodies work",
+     "tests": [
+      "Tetanus antibody response (IgG)",
+      "Pneumococcal antibody response, 23 serotypes (IgG)"
+     ],
+     "cite": {
+      "q": "The next test for antibody deficiencies is called a vaccine challenge.",
+      "s": "Immune Deficiency Foundation",
+      "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+      "file": "idf-laboratory-tests"
+     }
+    },
+    {
+     "label": "B and T cells",
+     "tests": [
+      "B cells (CD19)",
+      "Helper T cells (CD4)"
+     ],
+     "cite": {
+      "q": "Healthcare providers might order additional tests that measure B cells in a person’s blood if they suspect the person has an antibody deficiency.",
+      "s": "Immune Deficiency Foundation",
+      "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+      "file": "idf-laboratory-tests"
+     }
+    },
+    {
+     "label": "Complement",
+     "tests": [
+      "Complement total hemolytic CH50"
+     ],
+     "cite": {
+      "q": "If a healthcare provider thinks someone has a complement system problem, they may order an initial test called the total hemolytic complement assay (CH50).",
+      "s": "Immune Deficiency Foundation",
+      "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+      "file": "idf-laboratory-tests"
+     }
+    }
+   ]
+  },
+  {
+   "ask": "When do we know enough?",
+   "cite": [
+    {
+     "q": "An immunoglobulins blood test alone cannot diagnose any conditions.",
+     "s": "MedlinePlus (NIH)",
+     "u": "https://medlineplus.gov/lab-tests/immunoglobulins-blood-test/",
+     "file": "medlineplus-immunoglobulins"
+    },
+    {
+     "q": "Usually, a healthcare provider will confirm low or high values from a single serum Ig test by repeating the test several weeks later.",
+     "s": "Immune Deficiency Foundation",
+     "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "file": "idf-laboratory-tests"
+    },
+    {
+     "q": "Note that vaccine challenge responses should be interpreted by a healthcare provider who sees individuals with PI on a regular basis, like a clinical immunologist.",
+     "s": "Immune Deficiency Foundation",
+     "u": "https://primaryimmune.org/understanding-primary-immunodeficiency/diagnosis/laboratory-tests",
+     "file": "idf-laboratory-tests"
+    }
+   ]
+  }
+ ]
+}
