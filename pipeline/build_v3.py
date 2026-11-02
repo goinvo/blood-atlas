@@ -79,7 +79,7 @@ PANEL_DEFS = [
  {"id":"MYHEM", "name":"Hematology", "short":"Hematology", "src":MINE, "default":1, "grp":"ANNUAL",
   "url":"",
   "quote":"Transcribed from your own annual panel report, section \u201cHematology\u201d.",
-  "comp":[("WBC","Leukocytes"),("RBC","Erythrocytes"),
+  "comp":[("WBC","White Blood Cell count"),("RBC","Erythrocytes"),
           ("Hemoglobin","Hemoglobin"),("Hematocrit","Hematocrit"),
           ("MCV, MCH, MCHC","Red Blood Cell indices"),
           ("RDW","Erythrocyte distribution width"),
@@ -103,10 +103,12 @@ PANEL_DEFS = [
   "url":"",
   "quote":"Transcribed from your own annual panel report, section \u201cGeneral Chemistry\u201d.",
   "comp":[("Glucose (Random)","Blood glucose"),("Hemoglobin A1c","Hemoglobin A1c"),
-          ("Sodium","Sodium"),("Potassium","Potassium"),("Chloride","Chloride"),
+          ("Sodium","Sodium [Moles/volume] in Serum or Plasma"),
+          ("Potassium","Potassium [Moles/volume] in Serum or Plasma"),
+          ("Chloride","Chloride [Moles/volume] in Serum or Plasma"),
           ("Creatinine","Creatinine"),
           ("Glomerular Filtration Rate (eGFR)","Glomerular filtration rate"),
-          ("Urate","Urate"),("Albumin","Albumin"),
+          ("Urate","Uric acid"),("Albumin","Albumin"),
           ("Bilirubin Total","Bilirubin"),
           ("Alkaline Phosphatase","Alkaline phosphatase"),
           ("Alanine Aminotransferase","Alanine aminotransferase")]},
@@ -128,7 +130,7 @@ PANEL_DEFS = [
  {"id":"MYTHY", "name":"Thyroid function", "short":"Thyroid", "src":MINE, "default":1, "grp":"ANNUAL",
   "url":"",
   "quote":"Transcribed from your own annual panel report, section \u201cThyroid Function\u201d.",
-  "comp":[("Thyroid Stimulating Hormone","Thyrotropin"),("Free T4","Thyroxine (Free T4)")]},
+  "comp":[("Thyroid Stimulating Hormone","Thyroid-stimulating hormone"),("Free T4","Thyroxine (Free T4)")]},
 
  {"id":"MYBONE", "name":"Bone markers", "short":"Bone", "src":MINE, "default":1, "grp":"ANNUAL",
   "url":"",
@@ -183,7 +185,7 @@ PANEL_DEFS = [
  {"id":"THYROID", "name":"Thyroid panel", "short":"Thyroid", "src":CLEVE, "default":0,
   "url":"https://my.clevelandclinic.org/health/diagnostics/thyroid-panel",
   "quote":"A thyroid panel measures the hormones made by your thyroid gland and antibodies that might affect thyroid function.",
-  "comp":[("TSH (thyroid-stimulating hormone)","Thyrotropin"),
+  "comp":[("TSH (thyroid-stimulating hormone)","Thyroid-stimulating hormone"),
           ("T3 or free T3 (triiodothyronine)","Triiodothyronine (Free T3)"),
           ("T4 or free T4 (thyroxine)","Thyroxine (Free T4)"),
           ("Tg (thyroglobulin)","Thyroglobulin"),
@@ -253,6 +255,12 @@ def pick(match):
     """Best catalogue row whose analyte name is `match`: source-quoted first,
     then the more commonly ordered, then the shortest name."""
     ml = match.lower()
+    # An exact LOINC long name pins one code. Matching by analyte alone let
+    # "Leukocytes" resolve to a cord-blood count and "Thyrotropin" to a
+    # presence test, neither of which is what an annual panel measures.
+    exact = [k for k, t in enumerate(TESTS) if t["n"].lower() == ml]
+    if exact:
+        return exact[0]
     hits = [k for k, t in enumerate(TESTS) if analyte(t["n"]).lower() == ml]
     if not hits:
         hits = [k for k, t in enumerate(TESTS) if analyte(t["n"]).lower().startswith(ml)]
@@ -291,6 +299,17 @@ for pdef in PANEL_DEFS:
                         "grp": pdef.get("grp"), "slugs": slugs,
                         "nMissing": nmiss, "default": pdef["default"]})
 
+# Your annual panel is an adult's blood draw. A marker that resolves to a
+# newborn or non-blood specimen, or to a yes/no presence test, is the wrong
+# code: it gives the marker the wrong meaning and the wrong edges on the map
+# (WBC once read "Measures Leukocytes in cord blood" and pointed at pregnancy).
+WRONG_FOR_ANNUAL = re.compile(r"Cord blood|Urine|Cerebral spinal fluid|Body fluid|Amniotic|\[Presence\]", re.I)
+for pdef in PANEL_DEFS:
+    if pdef.get("grp") != "ANNUAL":
+        continue
+    for disp, match in pdef["comp"]:
+        loinc = markers[slugify(disp)].get("loinc") or ""
+        assert not WRONG_FOR_ANNUAL.search(loinc), "annual marker %r maps to %r" % (disp, loinc)
 
 base_idx = {k for k, t in enumerate(TESTS) if t.get("b")}
 panel_concerns = sorted({c for m in markers.values() for c in m["k"]})
@@ -352,6 +371,26 @@ for ci, c in enumerate(CONCERNS):
         "next": distinct[:40],
         "fams": famList,
     }
+
+# Hand-written "why this test" notes live in their own data file, so a rebuild
+# carries them instead of wiping them. Each note names the row it belongs to;
+# one that no longer finds its row fails the build rather than vanishing.
+_NOTES = json.loads(io.open(os.path.join(ROOT, "data", "follow-up-notes.json"), encoding="utf8").read())
+NOTES = _NOTES["notes"]
+for c in concerns.values():
+    pinned = _NOTES.get("order", {}).get(c["id"])
+    if pinned:
+        assert sorted(pinned) == sorted(t["n"] for t in c["next"]), "pinned order for %r no longer matches its rows" % c["id"]
+        c["next"].sort(key=lambda t: pinned.index(t["n"]))
+_rows = {(c["id"], t["n"]): t for c in concerns.values() for t in c["next"]}
+for note in NOTES:
+    row = _rows.get((note["concern"], note["test"]))
+    assert row is not None, "follow-up note for %r / %r no longer matches a row" % (note["concern"], note["test"])
+    row.update({k: note[k] for k in ("why", "whys", "whyu")})
+for pin in _NOTES.get("tier", []):
+    row = _rows.get((pin["concern"], pin["test"]))
+    assert row is not None, "tier pin for %r / %r no longer matches a row" % (pin["concern"], pin["test"])
+    row["t"] = pin["t"]
 
 # ---------------------------------------------------------------------------
 # 3. RELATIONSHIP NOTES — every one a verbatim quote from a fetched page
@@ -500,7 +539,7 @@ PAY = {
 # index.html is itself the template: the shell (markup/CSS/JS) is hand-edited
 # in place, and this script only ever replaces its one generated line, "const
 # D = {...};" — so there is no second copy of the shell to fall out of sync.
-CUR = io.open(DST, encoding="utf8").read()
+CUR = io.open(DST, encoding="utf8", newline="").read()
 PREFIX = "const D = "
 start = CUR.index(PREFIX)
 line_end = CUR.index("\n", start)
@@ -508,7 +547,9 @@ old_line = CUR[start:line_end]
 assert old_line.rstrip().endswith("};"), "index.html's \"const D = ...\" line isn't shaped as expected"
 new_line = PREFIX + json.dumps(PAY, ensure_ascii=False, separators=(",", ":")) + ";"
 out = CUR[:start] + new_line + CUR[line_end:]
-io.open(DST, "w", encoding="utf8").write(out)
+# newline="" keeps the file's LF endings on Windows, where text mode would
+# rewrite every line as CRLF and turn a one-line data change into a whole-file diff.
+io.open(DST, "w", encoding="utf8", newline="").write(out)
 
 m = PAY["meta"]
 print("%s  %.0f KB" % (os.path.basename(DST), len(out) / 1024.0))

@@ -1,0 +1,1202 @@
+{
+ "_about": "Why each follow-up test matters for a concern, shown in the detail panel with its source. Hand-written; build_v3.py attaches each note to the follow-up row it names (concern id + test analyte) and fails if a note no longer finds its row. `order` pins the hand-curated follow-up order for the concerns where the catalogue ranking reads wrong (it put cancer antigens first for allergies). `tier` pins the hand-set ordering tier (t: 18 commonly ordered .. -3 obscure) for a test within one concern.",
+ "notes": [
+  {
+   "concern": "fatigue",
+   "test": "Ferritin",
+   "why": "Ferritin is usually the first marker to fall as iron stores are depleted, and low levels are strongly linked to fatigue, weakness and difficulty concentrating.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/ferritin-blood-test/"
+  },
+  {
+   "concern": "fatigue",
+   "test": "Transferrin",
+   "why": "Transferrin rises as the body tries to capture more iron when levels run low, so a high result alongside fatigue points toward iron deficiency as the cause.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/iron-tests/"
+  },
+  {
+   "concern": "fatigue",
+   "test": "Reticulocyte count",
+   "why": "This count shows whether the bone marrow is making new red blood cells to keep up, which helps tell a fatigue-causing anemia the body is compensating for from one it isn't.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/reticulocyte-count/"
+  },
+  {
+   "concern": "anemia",
+   "test": "Ferritin",
+   "why": "Ferritin reflects total iron stores and is the single most sensitive test for diagnosing iron-deficiency anemia.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/ferritin-blood-test/"
+  },
+  {
+   "concern": "anemia",
+   "test": "Serum iron",
+   "why": "Serum iron measures how much iron is actively circulating in the blood, and combined with ferritin helps confirm iron deficiency as the cause of anemia.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/ency/article/000584.htm"
+  },
+  {
+   "concern": "anemia",
+   "test": "Transferrin",
+   "why": "A high transferrin paired with low iron saturation is a classic pattern in iron-deficiency anemia, since the body raises its iron-carrying capacity when stores run low.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/iron-tests/"
+  },
+  {
+   "concern": "sleep",
+   "test": "Cortisol",
+   "why": "Cortisol normally peaks in the morning and falls through the day, so a flattened or reversed pattern can point to a hormonal cause behind ongoing sleep problems.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/cortisol-test/"
+  },
+  {
+   "concern": "sleep",
+   "test": "Adrenocorticotropic hormone",
+   "why": "ACTH drives the adrenal glands' cortisol output and follows the same morning-high, midnight-low rhythm, so it's checked alongside cortisol to localize a suspected pituitary or adrenal cause of disrupted sleep.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/ency/article/003696.htm"
+  },
+  {
+   "concern": "sleep",
+   "test": "Cortisol, Free and Total, Serum (CORTO)",
+   "why": "This measures the same cortisol rhythm as the standard cortisol test — checking whether its normal morning-high, evening-low pattern is intact, since disruption of that rhythm is linked to insomnia and unrefreshing sleep.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/cortisol-test/"
+  },
+  {
+   "concern": "clotting",
+   "test": "D-dimer",
+   "why": "D-dimer rises when a clot is being broken down, so it's used to check whether abnormal clotting is happening even without an obvious bleeding or bruising cause.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/d-dimer-test/"
+  },
+  {
+   "concern": "clotting",
+   "test": "Prothrombin Time / INR",
+   "why": "PT/INR measures how well one branch of the clotting cascade is working, making it a standard first check whenever bleeding or clotting is a concern.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/prothrombin-time-test-and-inr-ptinr/"
+  },
+  {
+   "concern": "clotting",
+   "test": "Activated Partial Thromboplastin Time",
+   "why": "aPTT checks the other major clotting pathway, so it's usually ordered alongside PT/INR to narrow down which clotting factors might be involved.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/diagnostics/25101-partial-thromboplastin-time"
+  },
+  {
+   "concern": "heart",
+   "test": "Troponin",
+   "why": "Troponin is released into the blood only when heart muscle is damaged, making it the most specific marker for confirming a heart attack.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/ency/article/007452.htm"
+  },
+  {
+   "concern": "heart",
+   "test": "Myoglobin",
+   "why": "Myoglobin rises within an hour or two of heart muscle damage, earlier than troponin, though it isn't specific to the heart on its own and a positive result needs troponin to confirm it.",
+   "whys": "University of Rochester Medical Center",
+   "whyu": "https://www.urmc.rochester.edu/encyclopedia/content?ContentTypeID=167&ContentID=myoglobin_blood"
+  },
+  {
+   "concern": "heart",
+   "test": "Creatine kinase",
+   "why": "CK leaks into the blood when heart or skeletal muscle is damaged, and its heart-specific form (CK-MB) was the standard marker for a heart attack before troponin testing became routine.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/creatine-kinase/"
+  },
+  {
+   "concern": "bp",
+   "test": "Natriuretic peptides",
+   "why": "These rise when the heart is under strain from pumping against elevated pressure, so they're checked when blood pressure concerns raise the possibility of heart strain or early heart failure.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/diagnostics/22629-b-type-natriuretic-peptide"
+  },
+  {
+   "concern": "bp",
+   "test": "Catecholamines, Fractionated, Plasma",
+   "why": "Sudden, severe spikes in blood pressure can be caused by a catecholamine-secreting tumor, which this test screens for by measuring the stress hormones it releases.",
+   "whys": "Mayo Clinic Laboratories",
+   "whyu": "https://www.mayocliniclabs.com/test-catalog/overview/8532"
+  },
+  {
+   "concern": "bp",
+   "test": "Renin",
+   "why": "Renin helps control blood pressure through the kidneys, so measuring it — usually alongside aldosterone — helps find a hormonal or kidney cause behind high blood pressure rather than assuming it's unexplained.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/ency/article/003698.htm"
+  },
+  {
+   "concern": "stroke",
+   "test": "D-dimer",
+   "why": "D-dimer rises when a clot is being broken down, so it helps check whether a clot-related event like a stroke or vessel blockage may be involved.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/d-dimer-test/"
+  },
+  {
+   "concern": "stroke",
+   "test": "Fibrinogen",
+   "why": "Higher fibrinogen levels are linked to greater stroke and vascular risk, since fibrinogen is both a building block of clots and a marker of vascular inflammation.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/coagulation-factor-tests/"
+  },
+  {
+   "concern": "stroke",
+   "test": "Thrombin time",
+   "why": "This measures the final step of clot formation, helping identify a clotting-factor problem that could contribute to circulation issues.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/coagulation-factor-tests/"
+  },
+  {
+   "concern": "sugar",
+   "test": "Insulin",
+   "why": "Measuring insulin directly shows how much your pancreas is producing, which helps determine what type of diabetes or blood sugar problem is present.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/insulin-in-blood"
+  },
+  {
+   "concern": "sugar",
+   "test": "C-peptide",
+   "why": "C-peptide is released in step with your own insulin and isn't affected by insulin medication, so it shows how much insulin your body is truly making — useful for telling type 1 from type 2 diabetes.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/c-peptide-test/"
+  },
+  {
+   "concern": "sugar",
+   "test": "Hemoglobin A1c",
+   "why": "A1c reflects your average blood sugar over roughly the past three months, making it the standard test for diagnosing diabetes and tracking how well it's controlled.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/"
+  },
+  {
+   "concern": "thyroid",
+   "test": "Phosphate",
+   "why": "Phosphate balance is regulated by glands near the thyroid, so it's checked alongside thyroid workups to help separate a thyroid cause from a parathyroid or bone one.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/phosphate-in-blood"
+  },
+  {
+   "concern": "thyroid",
+   "test": "Parathyroid hormone",
+   "why": "The parathyroid glands sit right next to the thyroid, and PTH problems can produce symptoms that overlap with thyroid disease, so it's checked to tell the two apart.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/parathyroiddisorders.html"
+  },
+  {
+   "concern": "thyroid",
+   "test": "Thyroxine (Free T4)",
+   "why": "Free T4 is the thyroid's main active hormone, so measuring it directly — usually alongside TSH — confirms whether the thyroid itself is underactive or overactive.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/thyroxine-t4-test"
+  },
+  {
+   "concern": "weight",
+   "test": "Insulin",
+   "why": "Unexplained weight change can stem from an insulin-related problem, so measuring insulin directly checks whether the body is making too much, too little, or not responding to it properly.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/insulin-in-blood"
+  },
+  {
+   "concern": "weight",
+   "test": "Cortisol",
+   "why": "Cortisol imbalance can drive weight gain or loss, as seen in conditions like Cushing's or Addison's disease, so testing it helps rule a hormonal cause in or out.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/cortisol-test/"
+  },
+  {
+   "concern": "weight",
+   "test": "Phosphate",
+   "why": "Phosphate levels can shift with some of the same endocrine and metabolic conditions that drive unexplained weight change, so it's checked as part of ruling those out.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/phosphate-in-blood"
+  },
+  {
+   "concern": "gout",
+   "test": "Uric acid",
+   "why": "Uric acid is the substance that crystallizes in and around joints to cause gout, so this test is the direct check for whether uric acid buildup could explain your symptoms.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/uric-acid-test"
+  },
+  {
+   "concern": "gout",
+   "test": "thiopurine S-methyltransferase (TPMT) gene test",
+   "why": "This doesn't measure uric acid — it checks how well the body metabolizes thiopurine-class drugs, and is only relevant here if a thiopurine medication is being considered alongside gout treatment.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/thiopurine-methyltransferase-tpmt/"
+  },
+  {
+   "concern": "gout",
+   "test": "Urate",
+   "why": "Urate is essentially the same measurement as uric acid — a different name for the compound that forms gout crystals — confirming the same buildup from another angle.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/uric-acid-test"
+  },
+  {
+   "concern": "cholesterolgen",
+   "test": "apolipoprotein B (APOB) gene test",
+   "why": "Certain APOB variants disrupt the protein that lets LDL cholesterol bind to and be cleared by liver receptors, causing an inherited form of very high LDL called familial hypercholesterolemia.",
+   "whys": "NCBI GeneReviews",
+   "whyu": "https://www.ncbi.nlm.nih.gov/books/NBK174884/"
+  },
+  {
+   "concern": "cholesterolgen",
+   "test": "apolipoprotein E (APOE) gene test",
+   "why": "Certain APOE variants — particularly having two copies of the E2 form — impair how cholesterol-carrying particles are cleared from the blood, causing an inherited lipid disorder distinct from classic familial hypercholesterolemia.",
+   "whys": "NCBI StatPearls",
+   "whyu": "https://www.ncbi.nlm.nih.gov/books/NBK567738/"
+  },
+  {
+   "concern": "cholesterolgen",
+   "test": "low density lipoprotein receptor (LDLR) gene test",
+   "why": "LDLR variants are the most common cause of familial hypercholesterolemia, disabling the liver's LDL receptors that are needed to clear LDL cholesterol from the blood.",
+   "whys": "NCBI GeneReviews",
+   "whyu": "https://www.ncbi.nlm.nih.gov/books/NBK174884/"
+  },
+  {
+   "concern": "liver",
+   "test": "Ammonia",
+   "why": "The liver normally converts ammonia into a less toxic waste product, so a high level signals that liver function has dropped enough to let it build up.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/ammonia/"
+  },
+  {
+   "concern": "liver",
+   "test": "Bilirubin",
+   "why": "Bilirubin builds up in the blood when a damaged or blocked liver can't clear it as usual, making it one of the more direct signs of a liver problem.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/bilirubin-blood-test"
+  },
+  {
+   "concern": "liver",
+   "test": "Liver function tests",
+   "why": "This is a panel of several liver-related measurements taken together, giving a fuller picture of liver health than any single marker alone.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/liver-function-tests/"
+  },
+  {
+   "concern": "kidney",
+   "test": "Cortisol",
+   "why": "The adrenal glands that produce cortisol sit directly on top of the kidneys and help regulate the sodium and fluid balance the kidneys manage, so adrenal problems are sometimes checked alongside kidney concerns.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/cortisol-test/"
+  },
+  {
+   "concern": "kidney",
+   "test": "Phosphate",
+   "why": "The kidneys are responsible for clearing excess phosphate, so a high level is a common sign that kidney function has declined.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/phosphate-in-blood"
+  },
+  {
+   "concern": "kidney",
+   "test": "Estimated GFR",
+   "why": "eGFR is calculated from a creatinine test and is considered the best overall measure of how well the kidneys are filtering blood.",
+   "whys": "National Kidney Foundation",
+   "whyu": "https://www.kidney.org/kidney-topics/estimated-glomerular-filtration-rate-egfr"
+  },
+  {
+   "concern": "stones",
+   "test": "Phosphate",
+   "why": "Abnormal phosphate handling by the kidneys can contribute to the mineral imbalances that lead to stone formation.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/phosphate-in-blood"
+  },
+  {
+   "concern": "stones",
+   "test": "Uric acid",
+   "why": "High uric acid can crystallize in the kidneys as well as the joints, making uric acid stones one of the recognized types of kidney stones.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/uric-acid-test"
+  },
+  {
+   "concern": "stones",
+   "test": "Parathyroid hormone",
+   "why": "Overactive parathyroid glands raise blood calcium, and the extra calcium filtered by the kidneys is a well-known cause of calcium-based kidney stones.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/parathyroiddisorders.html"
+  },
+  {
+   "concern": "pancreas",
+   "test": "Lipase",
+   "why": "Lipase is made by the pancreas to digest fat, and it's considered the more specific of the two classic pancreatic enzymes for detecting pancreatitis.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/diagnostics/lipase-blood-test"
+  },
+  {
+   "concern": "pancreas",
+   "test": "Amylase",
+   "why": "Amylase is the other core pancreatic digestive enzyme, checked alongside lipase to help confirm pancreatic inflammation.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/amylase-test"
+  },
+  {
+   "concern": "pancreas",
+   "test": "Insulin",
+   "why": "Insulin is produced by the pancreas, so pancreatic disease or damage can also affect insulin production and blood sugar regulation.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/insulin-in-blood"
+  },
+  {
+   "concern": "lungs",
+   "test": "Bicarbonate",
+   "why": "Bicarbonate reflects your body's acid-base balance, and abnormal breathing (too fast or too slow) can both cause and result from a bicarbonate imbalance.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/ency/article/003469.htm"
+  },
+  {
+   "concern": "lungs",
+   "test": "Methemoglobin/Hemoglobin.total",
+   "why": "Methemoglobin is a form of hemoglobin that can't carry oxygen, so measuring how much of your total hemoglobin is in this form checks for a specific cause of breathing trouble a standard oxygen reading can miss.",
+   "whys": "MedlinePlus",
+   "whyu": "https://www.medlineplus.gov/ency/article/003371.htm"
+  },
+  {
+   "concern": "lungs",
+   "test": "Carboxyhemoglobin",
+   "why": "This measures how much hemoglobin has bound carbon monoxide instead of oxygen, directly checking for carbon monoxide as a cause of breathing difficulty.",
+   "whys": "University of Rochester Medical Center",
+   "whyu": "https://www.urmc.rochester.edu/encyclopedia/content?contentid=carbon_monoxide_blood&contenttypeid=167"
+  },
+  {
+   "concern": "hormones",
+   "test": "Cortisol",
+   "why": "Cortisol is one of the body's main regulatory hormones, so it's among the first checked when a broad hormonal imbalance is suspected.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/cortisol-test/"
+  },
+  {
+   "concern": "hormones",
+   "test": "Prolactin",
+   "why": "Prolactin is produced by the pituitary gland, the body's master hormone regulator, so an abnormal level can be an early sign of a broader pituitary or hormonal problem.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/prolactin/"
+  },
+  {
+   "concern": "hormones",
+   "test": "Progesterone",
+   "why": "Progesterone is one of the core reproductive hormones, so it's checked as part of a general hormone workup alongside estrogen and testosterone.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/progesterone/"
+  },
+  {
+   "concern": "fertility",
+   "test": "Prolactin",
+   "why": "Prolactin that's too high can suppress ovulation and fertility in both sexes, so it's checked when conception is a concern.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/prolactin/"
+  },
+  {
+   "concern": "fertility",
+   "test": "Progesterone",
+   "why": "A rise in progesterone about a week before your expected period confirms that ovulation actually occurred, making it a direct check on fertility.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/progesterone/"
+  },
+  {
+   "concern": "fertility",
+   "test": "Luteinizing hormone",
+   "why": "A mid-cycle LH surge triggers ovulation, so tracking LH helps pinpoint whether and when ovulation is happening.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/body/22255-luteinizing-hormone"
+  },
+  {
+   "concern": "pregnancy",
+   "test": "Progesterone",
+   "why": "Progesterone rises through pregnancy to help maintain the uterine lining and support the developing pregnancy, so it's tracked when pregnancy is a concern.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/progesterone/"
+  },
+  {
+   "concern": "pregnancy",
+   "test": "Oral Glucose Tolerance Test",
+   "why": "This is the standard screening test for gestational diabetes, usually done between 24 and 28 weeks of pregnancy.",
+   "whys": "WebMD",
+   "whyu": "https://www.webmd.com/diabetes/pregnancy-diabetes"
+  },
+  {
+   "concern": "pregnancy",
+   "test": "Human chorionic gonadotropin",
+   "why": "hCG is the hormone a pregnancy test detects — produced by the placenta and rising rapidly in early pregnancy — making it the direct confirmation test for pregnancy.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/body/22489-human-chorionic-gonadotropin"
+  },
+  {
+   "concern": "menopause",
+   "test": "Progesterone",
+   "why": "Progesterone production falls as ovulation becomes less regular approaching menopause, so a lower level can reflect that transition.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/progesterone/"
+  },
+  {
+   "concern": "menopause",
+   "test": "Luteinizing hormone",
+   "why": "LH rises as the ovaries respond less to hormonal signals during menopause, so a persistently high LH is a marker of the menopausal transition.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/body/22255-luteinizing-hormone"
+  },
+  {
+   "concern": "menopause",
+   "test": "Estradiol / Estrogen",
+   "why": "Estradiol, the main form of estrogen, drops sharply after menopause, so measuring it directly helps confirm menopausal status.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/estrogen-levels-test"
+  },
+  {
+   "concern": "mens",
+   "test": "Testosterone",
+   "why": "This is the direct measurement of the main male sex hormone, the first check for symptoms like low libido, fatigue, or erectile dysfunction.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/total-testosterone-test/"
+  },
+  {
+   "concern": "mens",
+   "test": "Androgen free Index",
+   "why": "This compares total testosterone to its binding protein (SHBG) to estimate how much is actually free to act on tissues, which can catch a problem a normal-looking total testosterone result would miss.",
+   "whys": "University of Massachusetts Memorial Health",
+   "whyu": "https://www.ummhealth.org/health-library/free-androgen-index"
+  },
+  {
+   "concern": "mens",
+   "test": "Testosterone, Total, Serum, Mass Spectrometry",
+   "why": "This measures the same total testosterone using a more precise method than standard immunoassays, which are known to be less accurate at the lower levels relevant to diagnosing low testosterone.",
+   "whys": "NCBI (PMC)",
+   "whyu": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9467846/"
+  },
+  {
+   "concern": "pcos",
+   "test": "Insulin",
+   "why": "Insulin resistance is a core feature of PCOS, so measuring insulin helps confirm that link and guide treatment.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/insulin-in-blood"
+  },
+  {
+   "concern": "pcos",
+   "test": "Testosterone",
+   "why": "Elevated testosterone is one of the defining features of PCOS, so this is a direct check for the androgen excess behind the condition.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/total-testosterone-test/"
+  },
+  {
+   "concern": "pcos",
+   "test": "Luteinizing hormone",
+   "why": "PCOS often raises LH relative to FSH, so an elevated LH-to-FSH ratio is a classic supporting finding.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/body/22255-luteinizing-hormone"
+  },
+  {
+   "concern": "inflammation",
+   "test": "Amylase",
+   "why": "Amylase can rise with inflammation of the salivary or pancreatic glands, including autoimmune causes like Sjögren's syndrome, so it's sometimes checked as part of a broader inflammation workup.",
+   "whys": "PubMed",
+   "whyu": "https://pubmed.ncbi.nlm.nih.gov/2433075/"
+  },
+  {
+   "concern": "inflammation",
+   "test": "Procalcitonin",
+   "why": "Procalcitonin rises specifically with bacterial infection rather than general inflammation, so it helps distinguish an infectious cause from a purely autoimmune or inflammatory one.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/procalcitonin-test/"
+  },
+  {
+   "concern": "inflammation",
+   "test": "Rheumatoid factor",
+   "why": "Rheumatoid factor is an antibody the immune system makes in some autoimmune diseases, making it one of the standard first checks when autoimmune inflammation is suspected.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/rheumatoid-factor-rf-test/"
+  },
+  {
+   "concern": "allergy",
+   "test": "IgE",
+   "why": "Total IgE is the classic allergy blood test — elevated levels support an allergic process, though this alone doesn't say what you're allergic to.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/total-ige/"
+  },
+  {
+   "concern": "allergy",
+   "test": "Eosinophils/Leukocytes",
+   "why": "Eosinophils are white blood cells that rise with allergic and asthmatic inflammation, making this count a standard marker for both.",
+   "whys": "PMC",
+   "whyu": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11541053/"
+  },
+  {
+   "concern": "allergy",
+   "test": "Tryptase",
+   "why": "Tryptase is released by mast cells during a severe allergic reaction, so it's checked after a suspected anaphylactic episode to help confirm one occurred.",
+   "whys": "NCBI Bookshelf",
+   "whyu": "https://www.ncbi.nlm.nih.gov/books/NBK274147/"
+  },
+  {
+   "concern": "allergy",
+   "test": "Cancer antigen 125",
+   "why": "This is a general cancer marker (elevated in some ovarian and other cancers) and isn't part of a standard allergy or asthma workup — its appearance here looks like a data mismatch in the catalogue rather than a genuine connection.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/ca-125-test/"
+  },
+  {
+   "concern": "allergy",
+   "test": "Cancer antigen 19-9",
+   "why": "This is a marker most associated with pancreatic and other GI cancers, with no established role in diagnosing allergies or asthma — its appearance here looks like a data mismatch in the catalogue.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/ca-19-9-test/"
+  },
+  {
+   "concern": "allergy",
+   "test": "Carcinoembryonic antigen",
+   "why": "This is a marker most associated with colorectal and other cancers, with no established role in diagnosing allergies or asthma — its appearance here looks like a data mismatch in the catalogue.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/carcinoembryonic-antigen-cea-test/"
+  },
+  {
+   "concern": "infection",
+   "test": "Procalcitonin",
+   "why": "Procalcitonin rises specifically with bacterial infection, making it useful for confirming a bacterial cause and gauging severity when infection is suspected.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/procalcitonin-test/"
+  },
+  {
+   "concern": "infection",
+   "test": "C-reactive protein",
+   "why": "CRP rises quickly with any significant inflammation or infection, making it one of the most common general-purpose tests checked when infection is suspected.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/diagnostics/23056-c-reactive-protein-crp-test"
+  },
+  {
+   "concern": "infection",
+   "test": "Mycobacterium tuberculosis tuberculin stimulated gamma interferon",
+   "why": "This is the blood-based interferon-gamma release assay (the mechanism behind tests like QuantiFERON-TB) used to screen for tuberculosis infection, a standard part of a general infection workup.",
+   "whys": "CDC / NCBI (PMC)",
+   "whyu": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8635161/"
+  },
+  {
+   "concern": "infection",
+   "test": "Mycobacterium bovis Ab",
+   "why": "This specific test is a veterinary antibody test for bovine tuberculosis in cattle, not a human infection marker — its appearance here looks like a data mismatch in the catalogue rather than a genuine follow-up test.",
+   "whys": "IDEXX Laboratories",
+   "whyu": "https://www.idexx.com/en/livestock/livestock-tests/ruminant-tests/idexx-m-bovis-ab-test-ous/"
+  },
+  {
+   "concern": "sti",
+   "test": "Syphilis tests (RPR / VDRL)",
+   "why": "These are the standard screening tests for syphilis, detecting antibodies the body produces in response to the infection.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/syphilis-tests"
+  },
+  {
+   "concern": "sti",
+   "test": "HIV screening (antibody/antigen)",
+   "why": "This combined test checks for both HIV antibodies and a viral protein (p24 antigen), which together allow HIV to be detected sooner after exposure than an antibody-only test.",
+   "whys": "National HIV Curriculum (UW)",
+   "whyu": "https://www.hiv.uw.edu/go/screening-diagnosis/diagnostic-testing/core-concept/all"
+  },
+  {
+   "concern": "sti",
+   "test": "HIV 1 Ab",
+   "why": "This checks specifically for antibodies to HIV-1, the strain responsible for the large majority of HIV infections worldwide.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/hiv-test/"
+  },
+  {
+   "concern": "hepatitisc",
+   "test": "Hepatitis C antibody",
+   "why": "A positive result means you've been exposed to hepatitis C at some point, making this the standard first screening test for the infection.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/hepatitis-testing/"
+  },
+  {
+   "concern": "hepatitisc",
+   "test": "Hepatitis B surface antigen",
+   "why": "A positive HBsAg result means hepatitis B virus is currently present in the blood, making this the direct test for an active infection.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/diagnostics/hbsag-screen"
+  },
+  {
+   "concern": "hepatitisc",
+   "test": "Hepatitis B virus e Ag",
+   "why": "This marker appears when hepatitis B is actively replicating at high levels, so it's checked in someone already known to have hepatitis B to gauge how active and infectious it currently is.",
+   "whys": "Mayo Clinic Laboratories",
+   "whyu": "https://www.mayocliniclabs.com/test-catalog/overview/8311"
+  },
+  {
+   "concern": "covid",
+   "test": "Influenza virus A Ab",
+   "why": "This checks for past exposure to influenza A by measuring antibodies, though blood antibody tests aren't the standard way to diagnose an active case — a nasal swab is used for that.",
+   "whys": "CDC",
+   "whyu": "https://www.cdc.gov/flu/professionals/diagnosis/table-testing-methods.htm"
+  },
+  {
+   "concern": "covid",
+   "test": "Influenza virus B Ab",
+   "why": "Same idea as the influenza A antibody test, but for the influenza B strain — a record of past exposure rather than a tool for diagnosing a current infection.",
+   "whys": "CDC",
+   "whyu": "https://www.cdc.gov/flu/professionals/diagnosis/table-testing-methods.htm"
+  },
+  {
+   "concern": "covid",
+   "test": "Influenza virus C Ab",
+   "why": "Influenza C causes much milder illness than A or B, and antibody testing for it — like the other flu antibody tests — reflects past exposure rather than diagnosing an active infection.",
+   "whys": "CDC",
+   "whyu": "https://www.cdc.gov/flu/professionals/diagnosis/table-testing-methods.htm"
+  },
+  {
+   "concern": "immunodef",
+   "test": "CD8+CD57+ cells/cells",
+   "why": "This measures what share of your CD8 killer T cells show CD57, a marker of \"senescent\" cells that have lost the ability to multiply and respond effectively — an expanded population is linked to weakened immune defense.",
+   "whys": "Immunity & Ageing (Springer)",
+   "whyu": "https://link.springer.com/article/10.1186/s12979-024-00487-4"
+  },
+  {
+   "concern": "immunodef",
+   "test": "CD8-CD57+ cells/cells",
+   "why": "This tracks the same senescence marker (CD57) on lymphocytes that are not CD8 T cells, helping show whether immune aging is limited to killer T cells or spread more broadly.",
+   "whys": "PMC",
+   "whyu": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454039/"
+  },
+  {
+   "concern": "immunodef",
+   "test": "CD3+CD8+CD57+ cells/cells",
+   "why": "This is the same senescent CD8 population confirmed via the pan-T-cell marker CD3, making sure the cells being counted are genuinely T cells rather than another cell type.",
+   "whys": "Cellular & Molecular Immunology (Nature)",
+   "whyu": "https://www.nature.com/articles/cmi201474"
+  },
+  {
+   "concern": "nutrition",
+   "test": "Folate (folic acid)",
+   "why": "Folate deficiency can affect red blood cell production and overall nutrition, so it's one of the standard vitamin levels checked.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/folicacid.html"
+  },
+  {
+   "concern": "nutrition",
+   "test": "Vitamin B12 (cobalamin)",
+   "why": "B12 is essential for red blood cells and nerve function, and deficiency is common enough that it's a routine part of a nutrition-focused workup.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/ency/article/003705.htm"
+  },
+  {
+   "concern": "nutrition",
+   "test": "Vitamin D (25-hydroxyvitamin D)",
+   "why": "This is the standard measure of overall vitamin D status, commonly checked as part of a general nutrition and vitamin panel.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/vitamin-d-tests/"
+  },
+  {
+   "concern": "vitd",
+   "test": "Vitamin D (25-hydroxyvitamin D)",
+   "why": "This measures total 25-hydroxyvitamin D, the form of the vitamin considered the best overall indicator of your vitamin D status.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/vitamin-d-tests/"
+  },
+  {
+   "concern": "vitd",
+   "test": "Vitamin D, 25-Hydroxy, Fractionated, Mass Spectrometry",
+   "why": "This measures the same 25-hydroxyvitamin D but separates it into its D2 and D3 components using a more precise method, which can matter if you're taking a D2 supplement specifically.",
+   "whys": "Mayo Clinic Laboratories",
+   "whyu": "https://www.mayocliniclabs.com/test-catalog/overview/83670"
+  },
+  {
+   "concern": "vitd",
+   "test": "25-hydroxyvitamin D3",
+   "why": "This isolates just the D3 form of the vitamin — the kind your skin makes from sunlight and most animal-based supplements provide — rather than the combined D2+D3 total.",
+   "whys": "Wikipedia (Calcifediol)",
+   "whyu": "https://en.wikipedia.org/wiki/Calcifediol"
+  },
+  {
+   "concern": "bone",
+   "test": "Phosphate",
+   "why": "Phosphate works together with calcium in bone mineralization, so an imbalance can be relevant when evaluating bone health.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/phosphate-in-blood"
+  },
+  {
+   "concern": "bone",
+   "test": "Parathyroid hormone",
+   "why": "PTH directly regulates how much calcium is pulled from bone into the blood, so overactive parathyroid glands are a recognized cause of weakened bone.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/parathyroiddisorders.html"
+  },
+  {
+   "concern": "bone",
+   "test": "Peripheral blood smear",
+   "why": "A blood smear can reveal signs of a bone marrow-based disease such as multiple myeloma, which weakens bone and can be mistaken for or coexist with osteoporosis.",
+   "whys": "American Cancer Society",
+   "whyu": "https://www.cancer.org/cancer/types/multiple-myeloma/detection-diagnosis-staging/testing.html"
+  },
+  {
+   "concern": "cancer",
+   "test": "Cancer antigen 125",
+   "why": "CA-125 is the most commonly used marker to monitor ovarian cancer, and elevated levels can prompt further evaluation for it or other conditions.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/ca-125-test/"
+  },
+  {
+   "concern": "cancer",
+   "test": "Cancer antigen 19-9",
+   "why": "CA 19-9 is most associated with pancreatic cancer and can also rise with other gastrointestinal cancers, making it one of the standard general tumor markers.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/ca-19-9-test/"
+  },
+  {
+   "concern": "cancer",
+   "test": "Carcinoembryonic antigen",
+   "why": "CEA is most associated with colorectal cancer and is used to monitor known cancers or investigate a suspected one, though it isn't specific to any single cancer type.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/carcinoembryonic-antigen-cea-test/"
+  },
+  {
+   "concern": "prostate",
+   "test": "Prostate-specific antigen",
+   "why": "PSA is the standard blood marker for prostate health, checked to help detect prostate cancer or monitor an enlarged prostate.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/diagnostics/24615-psa-test"
+  },
+  {
+   "concern": "prostate",
+   "test": "Prostate specific Ag",
+   "why": "This is the same total PSA measurement, the core test used to screen for and monitor prostate conditions.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/diagnostics/24615-psa-test"
+  },
+  {
+   "concern": "prostate",
+   "test": "Prostate Specific Ag Free",
+   "why": "Comparing free (unbound) PSA to total PSA helps clarify results in the borderline 4–10 ng/mL range, where a lower free-PSA percentage is more suggestive of cancer.",
+   "whys": "ARUP Laboratories",
+   "whyu": "https://ltd.aruplab.com/Tests/Pub/0080206"
+  },
+  {
+   "concern": "womenscancer",
+   "test": "Cancer antigen 125",
+   "why": "CA-125 is the standard marker for monitoring ovarian cancer, making it directly relevant when breast or ovarian risk is the concern.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/ca-125-test/"
+  },
+  {
+   "concern": "womenscancer",
+   "test": "Cancer antigen 15-3",
+   "why": "CA 15-3 is used mainly to monitor how well breast cancer treatment is working or to check for recurrence, rather than to screen for or diagnose it initially.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/ca-15-3/"
+  },
+  {
+   "concern": "womenscancer",
+   "test": "BRCA1 DNA repair associated (BRCA1) gene test",
+   "why": "Harmful BRCA1 variants sharply raise lifetime risk of both breast and ovarian cancer, so this genetic test is the direct check for an inherited cause behind a strong family history.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/brca-test/"
+  },
+  {
+   "concern": "blood_cancer",
+   "test": "Vitamin B12 (cobalamin)",
+   "why": "Some blood cancers can mimic or coexist with B12-deficiency anemia, so checking B12 helps rule out a simpler explanation before pursuing a cancer workup.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/ency/article/000574.htm"
+  },
+  {
+   "concern": "blood_cancer",
+   "test": "Human chorionic gonadotropin",
+   "why": "hCG can act as a tumor marker for certain germ cell tumors and some leukemias, not just pregnancy, so an unexplained rise can prompt further cancer evaluation.",
+   "whys": "NCBI (PMC)",
+   "whyu": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12810969/"
+  },
+  {
+   "concern": "blood_cancer",
+   "test": "Labcorp Lymphoid NGS",
+   "why": "This is a genetic sequencing panel built specifically to diagnose and classify blood and lymph node cancers, directly relevant once a blood cancer is suspected.",
+   "whys": "Labcorp",
+   "whyu": "https://oncology.labcorp.com/tests/452332/labcorp-lymphoid-ngs"
+  },
+  {
+   "concern": "mood",
+   "test": "Cortisol",
+   "why": "Both too much and too little cortisol are linked to mood changes, anxiety, and depression, so it's checked when a hormonal cause behind mental health symptoms is suspected.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/cortisol-test/"
+  },
+  {
+   "concern": "mood",
+   "test": "Phosphate",
+   "why": "Phosphate imbalance can cause confusion, irritability, and mood changes, so it's checked as part of ruling out a metabolic cause for mental health symptoms.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/phosphate-in-blood"
+  },
+  {
+   "concern": "mood",
+   "test": "Parathyroid hormone",
+   "why": "Overactive parathyroid glands raise blood calcium, which can cause depression, anxiety, and cognitive changes, so PTH is checked when a hormonal cause of mood symptoms is suspected.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/parathyroiddisorders.html"
+  },
+  {
+   "concern": "cognition",
+   "test": "Ammonia",
+   "why": "High ammonia is toxic to the brain and a recognized cause of confusion and cognitive changes, so it's checked when unexplained brain fog raises concern for a metabolic cause.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/ammonia/"
+  },
+  {
+   "concern": "cognition",
+   "test": "Phosphate",
+   "why": "Both high and low phosphate can affect nerve and brain function, contributing to confusion or brain fog.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/phosphate-in-blood"
+  },
+  {
+   "concern": "cognition",
+   "test": "Parathyroid hormone",
+   "why": "The high blood calcium caused by overactive parathyroid glands is a well-documented cause of memory problems and brain fog.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/parathyroiddisorders.html"
+  },
+  {
+   "concern": "hairskin",
+   "test": "Ferritin",
+   "why": "Low iron stores are a well-known cause of hair thinning and brittle nails, so ferritin is one of the first tests checked for these symptoms.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/ferritin-blood-test/"
+  },
+  {
+   "concern": "hairskin",
+   "test": "Phosphate",
+   "why": "Phosphate isn't a typical hair, skin, or nail marker on its own, but severe imbalances can affect overall tissue health as part of a broader metabolic disturbance.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/phosphate-in-blood"
+  },
+  {
+   "concern": "hairskin",
+   "test": "Serum iron",
+   "why": "Serum iron is checked alongside ferritin to confirm whether low iron is the reason behind hair, skin, or nail changes.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/ency/article/000584.htm"
+  },
+  {
+   "concern": "digestion",
+   "test": "Lipase",
+   "why": "Lipase is checked when digestive symptoms raise concern for pancreatitis, since the pancreas plays a central role in digesting fat.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/diagnostics/lipase-blood-test"
+  },
+  {
+   "concern": "digestion",
+   "test": "Amylase",
+   "why": "Amylase helps digest carbohydrates, and abnormal levels can point to pancreatic or salivary gland problems behind digestive symptoms.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/amylase-test"
+  },
+  {
+   "concern": "digestion",
+   "test": "Insulin",
+   "why": "The pancreas that produces digestive enzymes also produces insulin, so pancreatic problems affecting digestion can affect insulin and blood sugar too.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/insulin-in-blood"
+  },
+  {
+   "concern": "meds",
+   "test": "Prothrombin Time / INR",
+   "why": "INR is the standard test for monitoring how well warfarin is working and whether its dose needs adjusting.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/prothrombin-time-test-and-inr-ptinr/"
+  },
+  {
+   "concern": "meds",
+   "test": "Cytochrome P450 2C9 Genotyping",
+   "why": "CYP2C9 is the main enzyme that breaks down warfarin, and certain variants slow that process, so knowing your genotype helps guide a safer starting dose.",
+   "whys": "MedlinePlus Genetics",
+   "whyu": "https://medlineplus.gov/download/genetics/gene/cyp2c9.pdf"
+  },
+  {
+   "concern": "meds",
+   "test": "Cytochrome P450 3A4/3A5 Genotyping",
+   "why": "CYP3A4 and CYP3A5 metabolize roughly half of all prescribed drugs, so genetic variants here can affect the right dose for many common medications.",
+   "whys": "NCBI (PMC)",
+   "whyu": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11625447/"
+  },
+  {
+   "concern": "alcohol",
+   "test": "Ethanol",
+   "why": "This directly measures how much alcohol is currently in your blood, the most direct test related to alcohol use.",
+   "whys": "Cleveland Clinic",
+   "whyu": "https://my.clevelandclinic.org/health/diagnostics/22689-blood-alcohol-content-bac"
+  },
+  {
+   "concern": "alcohol",
+   "test": "Ethanol+Methanol+Isopropyl alcohol+Acetone",
+   "why": "This panel tests for ethanol alongside other toxic alcohols at the same time, used when poisoning from a look-alike substance (like methanol or antifreeze-related isopropanol) needs to be ruled out alongside ordinary alcohol use.",
+   "whys": "University of Iowa Health Care",
+   "whyu": "https://www.healthcare.uiowa.edu/Path_Handbook/rhandbook/test3559.html"
+  },
+  {
+   "concern": "alcohol",
+   "test": "Nonalcoholic steatohepatitis and fibrosis panel - Serum or Plasma",
+   "why": "This panel is designed to detect liver fibrosis from non-alcoholic causes, so here it's useful mainly to help distinguish alcohol-related liver damage from a non-alcoholic cause.",
+   "whys": "Mayo Clinic Laboratories",
+   "whyu": "https://www.mayocliniclabs.com/test-catalog/overview/604200"
+  },
+  {
+   "concern": "alcohol",
+   "test": "Alanine+Ethanolamine",
+   "why": "Despite the similar-looking name, this isn't a recognized alcohol biomarker — it's an unrelated screening test, and its appearance here looks like a data mismatch in the catalogue.",
+   "whys": "LOINC",
+   "whyu": "https://loinc.org/15137-3"
+  },
+  {
+   "concern": "smoking",
+   "test": "Carboxyhemoglobin",
+   "why": "Smoking raises carboxyhemoglobin by exposing you to carbon monoxide in smoke, so this level can reflect recent smoking.",
+   "whys": "University of Rochester Medical Center",
+   "whyu": "https://www.urmc.rochester.edu/encyclopedia/content?contentid=carbon_monoxide_blood&contenttypeid=167"
+  },
+  {
+   "concern": "smoking",
+   "test": "Carboxyhemoglobin/Hemoglobin.total",
+   "why": "This is the same carbon monoxide measurement expressed as a percentage of your total hemoglobin, making it easier to compare against smoker versus non-smoker reference ranges.",
+   "whys": "University of Rochester Medical Center",
+   "whyu": "https://www.urmc.rochester.edu/encyclopedia/content?contentid=carbon_monoxide_blood&contenttypeid=167"
+  },
+  {
+   "concern": "smoking",
+   "test": "Cotinine",
+   "why": "Cotinine is a nicotine byproduct that lasts far longer in the body than nicotine itself, making it the standard, more reliable marker for confirming recent tobacco or nicotine use.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/nicotine-and-cotinine/"
+  },
+  {
+   "concern": "heavymetal",
+   "test": "Lead",
+   "why": "Lead is one of the most common and well-tested heavy metals, and blood testing is the standard way to detect current exposure.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/ency/article/002473.htm"
+  },
+  {
+   "concern": "heavymetal",
+   "test": "Arsenic",
+   "why": "Arsenic blood testing checks for recent exposure, though it's only reliable within a couple of days — a urine test is used to evaluate exposure further in the past.",
+   "whys": "NCBI StatPearls",
+   "whyu": "https://www.ncbi.nlm.nih.gov/books/NBK541125/"
+  },
+  {
+   "concern": "heavymetal",
+   "test": "Mercury",
+   "why": "Mercury is one of the most commonly tested heavy metals, checked for exposure from sources like certain fish, dental amalgam, or industrial contact.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/heavy-metal-blood-test/"
+  },
+  {
+   "concern": "heavymetal",
+   "test": "Pharmacogenomics Panel",
+   "why": "This tests how your body metabolizes medications, not heavy metal levels, so it doesn't directly measure toxic exposure — its appearance here looks like a data mismatch in the catalogue.",
+   "whys": "NCBI (PMC)",
+   "whyu": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5288240/"
+  },
+  {
+   "concern": "athletic",
+   "test": "Lactate",
+   "why": "Blood lactate rises with exercise intensity, and the point where it starts climbing sharply (the lactate threshold) is one of the most established markers of athletic endurance and training fitness.",
+   "whys": "NCBI (PMC)",
+   "whyu": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6235347/"
+  },
+  {
+   "concern": "athletic",
+   "test": "Ferritin",
+   "why": "Low iron stores can blunt oxygen delivery to muscles and hurt endurance performance, so ferritin is checked in athletes with unexplained fatigue or declining performance.",
+   "whys": "MedlinePlus",
+   "whyu": "https://medlineplus.gov/lab-tests/ferritin-blood-test/"
+  },
+  {
+   "concern": "athletic",
+   "test": "Magnesium",
+   "why": "Magnesium supports normal muscle contraction and energy production, so a low level is checked as a possible cause of cramping or reduced muscle performance.",
+   "whys": "Testing.com",
+   "whyu": "https://www.testing.com/tests/magnesium/"
+  },
+  {
+   "concern": "genetic",
+   "test": "titin (TTN) gene test",
+   "why": "Truncating variants in the titin gene are the single most common known genetic cause of inherited dilated cardiomyopathy, a weakening of the heart muscle.",
+   "whys": "New England Journal of Medicine",
+   "whyu": "https://www.nejm.org/doi/full/10.1056/NEJMoa1110186"
+  },
+  {
+   "concern": "genetic",
+   "test": "menin 1 (MEN1) gene test",
+   "why": "MEN1 variants cause an inherited syndrome that raises the risk of tumors in the parathyroid, pituitary, and pancreas, so this test can identify carriers before symptoms even begin.",
+   "whys": "NCBI (PMC)",
+   "whyu": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6584804/"
+  },
+  {
+   "concern": "genetic",
+   "test": "ataxin 1 (ATXN1) gene test",
+   "why": "An expanded repeat in the ATXN1 gene causes spinocerebellar ataxia type 1, a progressive inherited disorder affecting coordination and balance, and this test is the direct genetic confirmation for it.",
+   "whys": "NCBI GeneReviews",
+   "whyu": "https://www.ncbi.nlm.nih.gov/books/NBK1184/"
+  }
+ ],
+ "order": {
+  "allergy": [
+   "IgE",
+   "Eosinophils/Leukocytes",
+   "Tryptase",
+   "Prostate-specific antigen",
+   "Hepatitis B surface antigen",
+   "HIV screening (antibody/antigen)",
+   "Cancer antigen 15-3",
+   "Vancomycin IgE Ab",
+   "Blood group antigens panel - Red Blood Cells",
+   "Toxoplasma gondii IgE Ab",
+   "Acetaminophen IgE Ab",
+   "carBAMazepine IgE Ab",
+   "Toxoplasma gondii IgA+IgE Ab",
+   "Fetal RhD antigen",
+   "Cancer antigen 125",
+   "Cancer antigen 19-9",
+   "Carcinoembryonic antigen",
+   "Histamine",
+   "Tryptase.beta",
+   "Blood group antigens present",
+   "Myelocytes.eosinophilic/Leukocytes",
+   "Tryptase.mature"
+  ],
+  "infection": [
+   "Procalcitonin",
+   "C-reactive protein",
+   "Mycobacterium tuberculosis tuberculin stimulated gamma interferon",
+   "Mycobacterium bovis Ag",
+   "Mycobacterium leprae PGL-1 Ab",
+   "Mycobacterium avium ss avium Ab",
+   "HIV identified",
+   "Lymecycline",
+   "Cytomegalovirus",
+   "Brucella sp identified",
+   "Mycobacterium avium ss paratuberculosis Ab",
+   "Rubella virus identified",
+   "Mycobacterium sp",
+   "Mycobacterium sp identified",
+   "Mycobacterium tuberculosis A60 Ab",
+   "Borrelia recurrentis",
+   "Mycobacterium sp rRNA",
+   "Toxoplasma gondii",
+   "Chlamydia trachomatis",
+   "Bacterial versus viral etiology indicator panel - Serum, Plasma or Blood",
+   "Mycobacterium tuberculosis A60 IgM Ab",
+   "Mycobacterium tuberculosis IgG Ab",
+   "Mycoplasma pneumoniae",
+   "Fungus and Mycobacterium sp identified",
+   "Mycobacterium tuberculosis DNA",
+   "Mycobacterium avium tuberculin stimulated gamma interferon",
+   "Mycobacterium bovis tuberculin stimulated gamma interferon",
+   "Mycobacterium tuberculosis stimulated gamma interferon CFP10 Ag spot count",
+   "Mycobacterium tuberculosis stimulated gamma interferon ESAT-6 Ag spot count",
+   "Phenytoin induced neutrophil IgG Ab",
+   "Phenytoin induced neutrophil IgM Ab",
+   "Valproate induced neutrophil IgG Ab",
+   "Valproate induced neutrophil IgM Ab",
+   "Tacrolimus induced neutrophil IgG Ab",
+   "Tacrolimus induced neutrophil IgM Ab",
+   "Vancomycin induced neutrophil IgG Ab",
+   "Vancomycin induced neutrophil IgM Ab",
+   "Acetaminophen induced neutrophil IgG Ab",
+   "Acetaminophen induced neutrophil IgM Ab",
+   "Mycobacterium bovis Ab"
+  ],
+  "alcohol": [
+   "Ethanol",
+   "Ethanol+Methanol+Isopropyl alcohol+Acetone",
+   "Nonalcoholic steatohepatitis and fibrosis panel - Serum or Plasma",
+   "Gamma glutamyl transferase.macromolecular",
+   "Alanine+Ethanolamine",
+   "Methanol",
+   "Ethanolamine",
+   "Phosphoethanolamine",
+   "Nonalcoholic steatohepatitis score",
+   "Nonalcoholic steatohepatitis grade"
+  ],
+  "heavymetal": [
+   "Lead",
+   "Arsenic",
+   "Mercury",
+   "Cadmium",
+   "Chromium",
+   "Manganese",
+   "Tetraethyl lead",
+   "Pharmacogenomics Panel",
+   "Thallium"
+  ]
+ },
+ "tier": [
+  {
+   "concern": "allergy",
+   "test": "IgE",
+   "t": 18
+  },
+  {
+   "concern": "allergy",
+   "test": "Eosinophils/Leukocytes",
+   "t": 18
+  },
+  {
+   "concern": "allergy",
+   "test": "Tryptase",
+   "t": 18
+  },
+  {
+   "concern": "allergy",
+   "test": "Cancer antigen 125",
+   "t": -3
+  },
+  {
+   "concern": "allergy",
+   "test": "Cancer antigen 19-9",
+   "t": -3
+  },
+  {
+   "concern": "allergy",
+   "test": "Carcinoembryonic antigen",
+   "t": -3
+  },
+  {
+   "concern": "infection",
+   "test": "Mycobacterium tuberculosis tuberculin stimulated gamma interferon",
+   "t": 18
+  },
+  {
+   "concern": "infection",
+   "test": "Mycobacterium bovis Ab",
+   "t": -3
+  },
+  {
+   "concern": "alcohol",
+   "test": "Ethanol",
+   "t": 18
+  },
+  {
+   "concern": "alcohol",
+   "test": "Ethanol+Methanol+Isopropyl alcohol+Acetone",
+   "t": 18
+  },
+  {
+   "concern": "alcohol",
+   "test": "Alanine+Ethanolamine",
+   "t": -3
+  },
+  {
+   "concern": "heavymetal",
+   "test": "Lead",
+   "t": 18
+  },
+  {
+   "concern": "heavymetal",
+   "test": "Arsenic",
+   "t": 18
+  },
+  {
+   "concern": "heavymetal",
+   "test": "Mercury",
+   "t": 18
+  },
+  {
+   "concern": "heavymetal",
+   "test": "Pharmacogenomics Panel",
+   "t": -3
+  }
+ ]
+}
