@@ -353,6 +353,26 @@ for ci, c in enumerate(CONCERNS):
         "fams": famList,
     }
 
+# Hand-written "why this test" notes live in their own data file, so a rebuild
+# carries them instead of wiping them. Each note names the row it belongs to;
+# one that no longer finds its row fails the build rather than vanishing.
+_NOTES = json.loads(io.open(os.path.join(ROOT, "data", "follow-up-notes.json"), encoding="utf8").read())
+NOTES = _NOTES["notes"]
+for c in concerns.values():
+    pinned = _NOTES.get("order", {}).get(c["id"])
+    if pinned:
+        assert sorted(pinned) == sorted(t["n"] for t in c["next"]), "pinned order for %r no longer matches its rows" % c["id"]
+        c["next"].sort(key=lambda t: pinned.index(t["n"]))
+_rows = {(c["id"], t["n"]): t for c in concerns.values() for t in c["next"]}
+for note in NOTES:
+    row = _rows.get((note["concern"], note["test"]))
+    assert row is not None, "follow-up note for %r / %r no longer matches a row" % (note["concern"], note["test"])
+    row.update({k: note[k] for k in ("why", "whys", "whyu")})
+for pin in _NOTES.get("tier", []):
+    row = _rows.get((pin["concern"], pin["test"]))
+    assert row is not None, "tier pin for %r / %r no longer matches a row" % (pin["concern"], pin["test"])
+    row["t"] = pin["t"]
+
 # ---------------------------------------------------------------------------
 # 3. RELATIONSHIP NOTES — every one a verbatim quote from a fetched page
 # ---------------------------------------------------------------------------
@@ -500,7 +520,7 @@ PAY = {
 # index.html is itself the template: the shell (markup/CSS/JS) is hand-edited
 # in place, and this script only ever replaces its one generated line, "const
 # D = {...};" — so there is no second copy of the shell to fall out of sync.
-CUR = io.open(DST, encoding="utf8").read()
+CUR = io.open(DST, encoding="utf8", newline="").read()
 PREFIX = "const D = "
 start = CUR.index(PREFIX)
 line_end = CUR.index("\n", start)
@@ -508,7 +528,9 @@ old_line = CUR[start:line_end]
 assert old_line.rstrip().endswith("};"), "index.html's \"const D = ...\" line isn't shaped as expected"
 new_line = PREFIX + json.dumps(PAY, ensure_ascii=False, separators=(",", ":")) + ";"
 out = CUR[:start] + new_line + CUR[line_end:]
-io.open(DST, "w", encoding="utf8").write(out)
+# newline="" keeps the file's LF endings on Windows, where text mode would
+# rewrite every line as CRLF and turn a one-line data change into a whole-file diff.
+io.open(DST, "w", encoding="utf8", newline="").write(out)
 
 m = PAY["meta"]
 print("%s  %.0f KB" % (os.path.basename(DST), len(out) / 1024.0))
